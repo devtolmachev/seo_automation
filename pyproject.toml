@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "seo-automation"
+version = "0.1.0"
+description = ""
+authors = ["dev.tolmachev <dev.tolmachev@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flask = {extras = ["async"], version = "^3.1.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

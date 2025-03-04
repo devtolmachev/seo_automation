@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовая страница</title>
+    <style>
+
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .examples {
+            display: flex;
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            padding: 25px;
+            font-family: Arial, sans-serif;
+        }
+
+        .type-box {
+            border: 2px solid #007BFF;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: #f9f9f9;
+        }
+        .type-title {
+            font-size: 1.5em;
+            color: #007BFF;
+            margin-bottom: 10px;
+        }
+        img {
+            width: 300px;
+            height: 300px;
+            border-radius: 5px;
+        }
+
+        .run-button {
+            background-color: #fffd8f;
+            border: 2px;
+            border-color: black;
+            padding: 18px;
+            border-radius: 5px;
+            font-weight: 500;
+            font-size: 50px;
+        }
+    </style>
+    <script>
+        function loadScript() {
+            var button = document.querySelector('button.run-button')
+
+            if (button.textContent === "Запустить скрипт") {
+                const script = document.createElement('script');
+                script.src = "{{url_for('static', filename='script.js')}}";
+                script.onload = function() {
+                    console.log('Скрипт загружен и инициализирован');
+                };
+                script.onerror = function() {
+                    console.error('Ошибка загрузки скрипта');
+                };
+                document.body.appendChild(script);
+                button.textContent = "Перезагрузить страницу"
+            } else {
+                location.reload()
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div>
+        <button class="run-button" onclick="loadScript()">Запустить скрипт</button>
+    </div>
+
+    <div class="examples">
+        <div class="type-box">
+            <div class="type-title">Пример для type=content</div>
+            <div class="content">Старый контент</div>
+            <article class="article-body">Старый текст статьи</article>
+        </div>
+    
+        <div class="type-box">
+            <div class="type-title">Пример для type=image</div>
+            <img class="test1" src="https://t4.ftcdn.net/jpg/01/99/16/61/360_F_199166162_nxURrf9QtsTetoSL8erW7lejkx5oLYMz.jpg" alt="старый alt текст">
+            <img class="test2" src="https://t4.ftcdn.net/jpg/01/99/16/61/360_F_199166162_nxURrf9QtsTetoSL8erW7lejkx5oLYMz.jpg" alt="старый текст">
+            <img class="test3" src="https://t4.ftcdn.net/jpg/01/99/16/61/360_F_199166162_nxURrf9QtsTetoSL8erW7lejkx5oLYMz.jpg" alt="старый alt текст изображения">
+        </div>
+    
+        <div class="type-box">
+            <div class="type-title">Пример для type=external_link</div>
+            <div>
+                <a href="http://example.com/old-link">Ссылка на страницу</a>
+            </div>
+            <div>
+                <a class="external-link-2" href="http://example.com/another-old-link">Ссылка на другую страницу</a>
+            </div>
+        </div>
+    
+        <div class="type-box">
+            <div class="type-title">Пример для type=internal_link</div>
+            <div>
+                <a href="/another-old-link">Внутренняя ссылка на страницу</a>
+            </div>
+            <div>
+                <a class="internal-link-2" href="/yet-another-old-link">Внутренняя ссылка на другую страницу</a>
+            </div>
+        </div>
+
+        <div class="type-box">
+            <div class="type-title">Пример для type=keyword</div>
+            <h1 class="title">Старый заголовок</h1>
+            <span class="highlight">Старый текст</span>
+        </div>
+    
+    </div>
+</body>
+</html>

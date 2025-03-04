@@ -1,0 +1,137 @@
+[
+    {
+        "id": "1a2b3c4d5e",
+        "id_page": "http://example.com/page1",
+        "status": true,
+        "type": "keyword",
+        "selector": null,
+        "old": "Старый заголовок",
+        "new": "Новый заголовок",
+        "ignore_case": true
+    },
+    {
+        "id": "3c4d5e6f7g",
+        "id_page": "http://example.com/page3",
+        "status": true,
+        "type": "keyword",
+        "selector": "span.highlight",
+        "old": "Старый текст",
+        "new": "Новый текст",
+        "ignore_case": true
+    },
+    {
+        "id": "3c4d5e6f7g",
+        "id_page": "http://example.com/page3",
+        "status": true,
+        "type": "keyword",
+        "selector": "title",
+        "old": "Тестовая",
+        "new": "Не тестовая",
+        "ignore_case": true
+    },
+
+    {
+        "id": "4d5e6f7g8h",
+        "id_page": "http://example.com/page4",
+        "status": true,
+        "type": "content",
+        "selector": "div.content",
+        "old": "Старый контент",
+        "new": "Новый контент",
+        "ignore_case": false
+    },
+    {
+        "id": "6f7g8h9i0j",
+        "id_page": "http://example.com/page6",
+        "status": true,
+        "type": "content",
+        "selector": "article.article-body",
+        "old": "Старый текст статьи",
+        "new": "Новый текст статьи",
+        "ignore_case": false
+    },
+
+    {
+        "id": "7g8h9i0j1k",
+        "id_page": "http://example.com/page7",
+        "status": true,
+        "type": "image",
+        "selector": "img.test1",
+        "old": "старый alt текст",
+        "new": "новый alt текст",
+        "ignore_case": true
+    },
+
+    {
+        "id": "8h9i0j1k2l",
+        "id_page": "http://example.com/page8",
+        "status": true,
+        "type": "image",
+        "selector": "img.test2",
+        "old": "старый текст",
+        "new": "новый текст",
+        "ignore_case": false
+    },
+    {
+        "id": "9i0j1k2l3m",
+        "id_page": "http://example.com/page9",
+        "status": true,
+        "type": "image",
+        "selector": "img.test3",
+        "old": "старый alt текст изображения",
+        "new": "новый alt текст изображения",
+        "ignore_case": true
+    },
+
+
+    {
+        "id": "0j1k2l3m4n",
+        "id_page": "http://example.com/page10",
+        "status": true,
+        "type": "external_link",
+        "selector": "",
+        "old": "http://example.com/old-link",
+        "new": "http://example.com/new-link",
+        "ignore_case": false
+    },
+    {
+        "id": "1k2l3m4n5o",
+        "id_page": "http://example.com/page11",
+        "status": true,
+        "type": "external_link",
+        "selector": "a.external-link-2",
+        "old": "http://example.com/another-old-link",
+        "new": "http://example.com/another-new-link",
+        "ignore_case": true
+    },
+    {
+        "id": "0j1k2l3m4n",
+        "id_page": "http://example.com/page10",
+        "status": true,
+        "type": "external_link",
+        "selector": "a.external-link-3",
+        "old": "http://example.com/old-link",
+        "new": "http://example.com/new-link",
+        "ignore_case": false
+    },
+    {
+        "id": "1k2l3m4n5o",
+        "id_page": "http://example.com/page11",
+        "status": true,
+        "type": "internal_link",
+        "selector": null,
+        "old": "/another-old-link",
+        "new": "/another-new-link",
+        "ignore_case": true
+    },
+    {
+        "id": "2l3m4n5o6p",
+        "id_page": "http://example.com/page12",
+        "status": true,
+        "type": "internal_link",
+        "selector": "a.internal-link-2",
+        "old": "/yet-another-old-link",
+        "new": "/yet-another-new-link",
+        "ignore_case": false
+    }
+]

@@ -1,0 +1,91 @@
+[
+
+    {
+        "id": "1a2b3c4d5e",
+        "id_page": "http://example.com/page1",
+        "status": true,
+        "type": "keyword",
+        "selector": null,
+        "old": "mdn web docs",
+        "new": "[UPDATED TEXT BY SCRIPT] MDN Web Docs",
+        "ignore_case": true
+    },
+    {
+        "id": "3c4d5e6f7g",
+        "id_page": "http://example.com/page3",
+        "status": true,
+        "type": "keyword",
+        "selector": "meta[name=\"description\"]",
+        "attribute_to_update": "content",
+        "old": "Learn about",
+        "new": "[UPDATED TEXT BY SCRIPT]"
+    },
+    {
+        "id": "3c4d5e6f7g",
+        "id_page": "http://example.com/page3",
+        "status": true,
+        "type": "keyword",
+        "selector": ".submenu-item-heading",
+        "old": "web technology",
+        "new": "{Blockchain} Technology",
+        "ignore_case": true
+    },
+
+
+    {
+        "id": "4d5e6f7g8h",
+        "id_page": "http://example.com/page4",
+        "status": true,
+        "type": "content",
+        "selector": ".submenu-item-description",
+        "new": "[UPDATED TEXT BY SCRIPT (FORCE SET] Blockchain technologies reference for developers",
+        "force_set": true
+    },
+    {
+        "id": "6f7g8h9i0j",
+        "id_page": "http://example.com/page6",
+        "status": true,
+        "type": "content",
+        "selector": "#references-button",
+        "new": "[UPDATED TEXT BY SCRIPT] REFERENCES BUTTON",
+        "old": "References"
+    },
+
+
+    {
+        "id": "1k2l3m4n5o",
+        "id_page": "http://example.com/page11",
+        "status": true,
+        "type": "external_link",
+        "old": "https://github.com/mdn/content/blob/main/CONTRIBUTING.md",
+        "new": "https://example.com/new-extrnal-link-without-selector"
+    },
+    {
+        "id": "0j1k2l3m4n",
+        "id_page": "http://example.com/page10",
+        "status": true,
+        "type": "external_link",
+        "selector": "#root > div > div.sticky-header-container > div > div > div > ul > li > div > div > ul > li:nth-child(1) > form > div > a",
+        "new": "https://example.com/new-extrnal-link-by-selector"
+    },
+
+
+    {
+        "id": "1k2l3m4n5o",
+        "id_page": "http://example.com/page11",
+        "status": true,
+        "type": "internal_link",
+        "selector": null,
+        "old": "/users/fxa/login/authenticate/?next=%2Fen-US%2Fdocs%2FWeb%2FAPI%2FHTMLElement%2FinnerText",
+        "new": "/new-link-to-any-user"
+    },
+    {
+        "id": "2l3m4n5o6p",
+        "id_page": "http://example.com/page12",
+        "status": true,
+        "type": "internal_link",
+        "selector": "#references-menu > li.html-link-container > a",
+        "new": "/yet-another-new-link",
+        "force_set": true
+    }
+]

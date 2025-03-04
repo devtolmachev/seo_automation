@@ -1,0 +1,109 @@
+{
+    "errors": [],
+    "base": {},
+    "isAsian": false,
+    "insert_into_content_only": true,
+    "suggestions": [
+        {
+            "keyword": "example",
+            "url": "https://example.com"
+        }
+    ],
+    "images": [
+        {
+            "url": "https://example.com/image.jpg",
+            "alt_text": "Example Image"
+        }
+    ],
+    "accessibility": [
+        {
+            "raw_tag": "button",
+            "aria_label": "Submit"
+        }
+    ],
+    "metaTags": {
+        "og_title": "Example Title",
+        "og_description": "Example Description",
+        "og_url": "https://example.com",
+        "meta_description": "This is an example description.",
+        "meta_keywords": "example, SEO"
+    },
+
+
+    "recommendations": [
+        {
+            "id": "25",
+            "id_page": "https://example.com/about",
+            "status": false,
+            "type": "keyword",
+            "selector": "meta[name='keywords']", 
+            /* 
+            если контент html элемента 
+            (который нужно найти по этому селектору) не совпалает 
+            со значение в "old" поле, то скрипт будет искать 
+            дочерние элементы, контент которых совпадает со 
+            значением в поле "old", и менять часть контента, где есть 
+            совпадения с полем "new".
+            если selector=null, тогда скрипт будет искать все элементы на 
+            странице у которых контент частично или полностью совпадает со 
+            значением в поле "old".
+
+            Если селектор не null, но не был найден, тогда в html страницы 
+            будет вставлен элемент со значением innerHTML, равным значению 
+            в поле "new".
+            */
+
+            "old": "Old title",
+            "new": "New title with new keywords"
+        },
+        {
+            "id": "24",
+            "id_page": "https://example.com/about",
+            "status": true,
+            "type": "content",
+            /*
+            отличие от keywords только в том, что скрипт будет искать полные 
+            совпадения, а не частичные. и соответственно менять весь контент 
+            (innerHTML).
+            */
+            "selector": ".page-title",
+            "old_data": "Old title",
+            "new_data": "New title with new keywords"
+        },
+        {
+            "id": "23",
+            "id_page": "https://example.com/about",
+            "status": true,
+            "type": "image",
+            /*
+            особенности:
+            1) скрипт не будет вставлять новый элемент, если ничего не найдено 
+            по селектору, или селектор=null.
+            2) если селектор=null и "old" равен чему то, то будет производиться 
+            поиск элемента по всей странице.
+            3) 
+            */
+            "selector": "img[src='https://example.com/image.jpg']", // может быть null если "old" не равен null
+            "old": "Old alt text", // может быть null если selector не равен null
+            "new": "New alt text"
+        }, 
+        {
+            "id": "22",
+            "id_page": "https://example.com/about",
+            "status": true,
+            "type": "internal_link",
+            "selector": "div.internal_link",
+            "old_link": "/internal_link_old",
+            "new_link": "/internal_link"
+        },
+        {
+            "id": "21",
+            "id_page": "https://example.com/about",
+            "status": true,
+            "type": "external_link",
+            "selector": "div.external_link",
+            "old_alt": "/external_link_old",
+            "new_d": "/external_link"
+        }
+    ]
+}
