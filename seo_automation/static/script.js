@@ -2,10 +2,41 @@
 // Read more at https://seojuice.io/
 // This script fetches SEO suggestions from SEOJuice and applies them to the page.
 
+var state = {
+  finish: false
+};
+
+const handler = {
+  set(target, property, value) {
+    target[property] = value;
+    if (property === "finish" && value === true) {
+      document.head.removeChild(cssSection);
+    }
+    console.log(`Значение ${property} изменено на ${value}`);
+    return true;
+  }
+};
+
+const proxyState = new Proxy(state, handler);
+
 const SEOJuice = {
   init() {
     if (window.loadedSeojuice) return;
     window.loadedSeojuice = true;
+
+    let cssSection = document.createElement('style');
+    cssSection.setAttribute("id", "helper")
+    const css = `
+      .hidden-dom-element {
+        display: none
+      }
+      .visible {
+        display: block;
+      }
+    `;
+    cssSection.appendChild(document.createTextNode(css));
+    document.body.classList.add('hidden-dom-element');
+    document.head.appendChild(cssSection);
 
     const currentPageUrl = this.cleanUrl(window.location.href);
     this.fetchSuggestions(currentPageUrl);
@@ -58,9 +89,13 @@ const SEOJuice = {
   },
 
   fetchSuggestions(url) {
-    fetch('http://127.0.0.1:6785/test_data')
+    fetch(`https://xano.rankauthority.com/api:ZnCZv4aQ/content_recommendations?status=true&type=test&website_id=${url}`)
       .then(response => response.json())
-      .then(this.processSuggestions.bind(this))
+      .then((json) => {
+        this.processSuggestions.bind(this)(json)
+        var cssSection = document.getElementById('helper')
+        document.head.removeChild(cssSection);
+      })
       .catch(this.showError);
   },
 
@@ -69,6 +104,10 @@ const SEOJuice = {
       var { id, id_page, status, type, selector, old, _new, ignore_case } = data;
       _new = data.new;
       if (!status) {
+        return;
+      };
+
+      if (location.origin != id_page) {
         return;
       }
 
@@ -102,7 +141,7 @@ const SEOJuice = {
       }
     }
 
-    data.forEach(processSuggestion)
+    data.map((i) => {processSuggestion(i)});
     window.loadedSeojuice = false;
     return;
 
