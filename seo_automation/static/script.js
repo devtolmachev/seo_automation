@@ -89,7 +89,9 @@ const SEOJuice = {
   },
 
   fetchSuggestions(url) {
-    fetch(`https://xano.rankauthority.com/api:ZnCZv4aQ/content_recommendations?status=true&type=test&website_id=${url}`)
+    fetch(
+      'https://xano.rankauthority.com/api:ZnCZv4aQ/content_recommendations?status=true&type=keyword&website_id=f370efb9-d1c4-4cc4-aadf-663a2f933e4e&app_version=test&page_id=/cart'
+    )
       .then(response => response.json())
       .then((json) => {
         this.processSuggestions.bind(this)(json)
@@ -107,9 +109,9 @@ const SEOJuice = {
         return;
       };
 
-      if (location.origin != id_page) {
-        return;
-      }
+      // if (location.origin != id_page) {
+      //   return;
+      // }
 
       if (type === "keyword" || type === "content") {
         this.processContent(
