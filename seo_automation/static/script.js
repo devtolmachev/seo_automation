@@ -1,28 +1,7 @@
-// SEOJuice Suggestions Script
-// Read more at https://seojuice.io/
-// This script fetches SEO suggestions from SEOJuice and applies them to the page.
-
-var state = {
-  finish: false
-};
-
-const handler = {
-  set(target, property, value) {
-    target[property] = value;
-    if (property === "finish" && value === true) {
-      document.head.removeChild(cssSection);
-    }
-    console.log(`Значение ${property} изменено на ${value}`);
-    return true;
-  }
-};
-
-const proxyState = new Proxy(state, handler);
-
-const SEOJuice = {
+const SeoAutomationScript = {
   init() {
-    if (window.loadedSeojuice) return;
-    window.loadedSeojuice = true;
+    if (window.loadedSeoAutomationScript) return;
+    window.loadedSeoAutomationScript = true;
 
     let cssSection = document.createElement('style');
     cssSection.setAttribute("id", "helper")
@@ -40,7 +19,7 @@ const SEOJuice = {
 
     const currentPageUrl = this.cleanUrl(window.location.href);
     this.fetchSuggestions(currentPageUrl);
-    window.loadedSeojuice = false;
+    window.loadedSeoAutomationScript = false;
   },
 
   cleanUrl(url) {
@@ -77,7 +56,7 @@ const SEOJuice = {
       'gbraid=.*?'
     ];
 
-    // Regex pattern with all parameters to NOT send them to SEOJuice
+    // Regex pattern with all parameters to NOT send them to SeoAutomationScript
     const pattern = `(?<=&|\\?)(${parametersToRemove.join('|')})(&|$)`;
     
     // Remove matching parameters from URL
@@ -85,12 +64,16 @@ const SEOJuice = {
   },
 
   showError(text) {
-    console.warn('[SeoJuice] Error:', text);
+    console.warn('[SeoAutomationScript] Error:', text);
   },
 
   fetchSuggestions(url) {
+    let element = document.getElementById('seo_automator')
+    let website_id = element.getAttribute('data-website-id')
+    let app_version = element.getAttribute('data-app-version') || "prod"
+    let path = window.location.pathname;
     fetch(
-      'https://xano.rankauthority.com/api:ZnCZv4aQ/content_recommendations?status=true&type=keyword&website_id=f370efb9-d1c4-4cc4-aadf-663a2f933e4e&app_version=test&page_id=/cart'
+      `https://xano.rankauthority.com/api:ZnCZv4aQ/content_recommendations?status=true&website_id=${website_id}&app_version=${app_version}&page_id=${path}`
     )
       .then(response => response.json())
       .then((json) => {
@@ -109,9 +92,9 @@ const SEOJuice = {
         return;
       };
 
-      // if (location.origin != id_page) {
-      //   return;
-      // }
+      if (location.origin != id_page) {
+        return;
+      }
 
       if (type === "keyword" || type === "content") {
         this.processContent(
@@ -144,22 +127,7 @@ const SEOJuice = {
     }
 
     data.map((i) => {processSuggestion(i)});
-    window.loadedSeojuice = false;
-    return;
-
-    const { errors, base, isAsian, insert_into_content_only, suggestions, images, accessibility, custom_link_class, metaTags } = data;
-
-    if (errors.length > 0) {
-      errors.forEach(this.showError);
-      return;
-    }
-    
-    this.updateMetaTags(metaTags);
-    this.processLinks(suggestions, isAsian, insert_into_content_only, custom_link_class);
-    this.processImages(images);
-    this.processAccessibilityElements(accessibility);
-
-    window.loadedSeojuice = false;
+    window.loadedSeoAutomationScript = false;
   },
 
   processContent(selector, old_data, new_data, ignoreCase, forceReplaceContent, attributeToUpdate) {
@@ -189,10 +157,6 @@ const SEOJuice = {
   },
 
   processImageAlt(selector, old_alt, new_alt) {
-    /**
-    * Обновляет указанный HTML элементы если они содержат указанное ключевое слово.
-    * @param {HTMLElement} element - HTML элемент для обновления.
-    */
     const updateElement = (element) => {
       element.alt = new_alt;
     }
@@ -205,10 +169,6 @@ const SEOJuice = {
   },
 
   processLinks(selector, old_data, new_data, isInternal, forceSet) {
-    /**
-    * Обновляет указанный HTML элемент если он содержит указанное ключевое слово.
-    * @param {HTMLElement} element - HTML элемент для обновления.
-    */
     const updateElement = (element) => {
       if ( !element.href) {
         return
@@ -231,46 +191,6 @@ const SEOJuice = {
     const elements = document.querySelectorAll(selector);
     elements.forEach(updateElement);
   },
-
-  updateMetaTags({ og_title, og_description, og_url, meta_description, meta_keywords }) {
-    const updateMetaTag = (selector, content) => {
-      if (content) {
-        let tag = document.querySelector(selector);
-        if (tag) {
-          tag.setAttribute('content', content);
-        } else {
-          tag = document.createElement('meta');
-          const [attr, value] = selector.split('=');
-          tag.setAttribute(attr.split('[')[1].replace(/]/g, ''), value.replace(/['"]/g, '').replace(/]/g, '').replace(/\]/g, ''));
-          tag.setAttribute('content', content);
-          document.head.appendChild(tag);
-        }
-      }
-    };
-
-    updateMetaTag('meta[property="og:title"]', og_title);
-    updateMetaTag('meta[property="og:description"]', og_description);
-    updateMetaTag('meta[property="og:url"]', og_url);
-    updateMetaTag('meta[name="description"]', meta_description);
-    updateMetaTag('meta[name="keywords"]', meta_keywords);
-  },
-
-  // processLinks(links, isAsian, insertIntoContentOnly, custom_link_class) {
-  //   if (!Array.isArray(links)) return;
-
-  //   const contentOnlyTags = '.content, .article, .prose, .article-section, .content-area, .post-content, .elementor-widget-container, .elementor-widget-theme-post-content, .blog-post, .article-body, .spnc-post-content, .articlebody, .entry-content, .detail-description';
-  //   const alreadyReplaced = new Set();
-  //   links.forEach(link => {
-  //     const el = document.createElement('a');
-  //     el.href = link.url;
-  //     el.innerText = link.keyword;
-  //     if (custom_link_class) {
-  //       el.className = custom_link_class;
-  //     }
-
-  //     this.replaceText(document.body, link.keyword, el, isAsian, insertIntoContentOnly, contentOnlyTags, alreadyReplaced);
-  //   });
-  // },
 
   replaceText(node, keyword, newText, isAsian, ignoreCase, alreadyReplaced, forceSet, attributeToUpdate) {
     var walker;
@@ -345,8 +265,6 @@ const SEOJuice = {
 
       if (forceSet && !attributeToUpdate) {
         this.replaceTextNodeOnly(currentNode, keyword, newText, true, ignoreCase);
-        // alreadyReplaced.add(keyword.toLowerCase());
-        // return;
       }
 
       if (attributeToUpdate) {
@@ -361,8 +279,6 @@ const SEOJuice = {
             replacement = value.replaceAll(pattern, newText)
           }
           currentNode.setAttribute(attributeToUpdate, replacement)
-          // alreadyReplaced.add(keyword.toLowerCase());
-          // return;
         }
 
         currentNode = walker.nextNode();
@@ -377,8 +293,6 @@ const SEOJuice = {
         if (anchorIndex !== -1) {
           if (this.isCompleteWordOrPhrase(matchedText, keyword)) {
             this.replaceTextNodeOnly(currentNode, keyword, newText, false, ignoreCase)
-            // alreadyReplaced.add(keyword.toLowerCase());
-            // return;
           }
         }
       };
@@ -386,8 +300,6 @@ const SEOJuice = {
       currentNode = walker.nextNode();
     }
   },
-
-  walkAroundDOMTree(walker, replaceCallback) {},
 
   replaceTextNodeOnly(element, oldText, newText, forceSet, ignoreCase) {
     // Получаем все дочерние узлы элемента
@@ -426,144 +338,6 @@ const SEOJuice = {
     return trimmedMatch === keyword.toLowerCase() ||
             ['.', ',', '!', ')', '?', '"', 'вЂ™'].includes(trimmedMatch.slice(-1));
   },
-
-  replaceTextWithLink(textNode, matchedText, anchorIndex, keyword, link) {
-    const matchIndex = textNode.textContent.indexOf(matchedText);
-    const newLink = link.cloneNode(true);
-    const afterLink = textNode.splitText(matchIndex + anchorIndex);
-    afterLink.textContent = afterLink.textContent.substring(keyword.length);
-    textNode.parentNode.insertBefore(newLink, afterLink);
-  },
-
-  processImages(images) {
-    if (!Array.isArray(images)) return;
-
-    // Get all images once upfront
-    const imgElements = document.querySelectorAll('img');
-
-    // Create a Map for O(1) lookups
-    const imageMap = new Map(images.map(img => [img.url, img.alt_text]));
-    
-    const checkUrl = (url) => {
-      // Strip query string from URL
-      url = url.split('?')[0];
-      
-      // Try the original URL first
-      if (imageMap.has(url)) return imageMap.get(url);
-      
-      // If URL starts with https:, try without it
-      if (url.startsWith('https:')) {
-        const withoutProtocol = `//${url.substring(8)}`;
-        return imageMap.has(withoutProtocol) ? imageMap.get(withoutProtocol) : null;
-      }
-      
-      // If URL starts with //, try with https:
-      if (url.startsWith('//')) {
-        const withProtocol = `https:${url}`;
-        return imageMap.has(withProtocol) ? imageMap.get(withProtocol) : null;
-      }
-      
-      return null;
-    };
-    
-    imgElements.forEach(img => {
-
-      // Check src
-      const altFromSrc = checkUrl(img.src);
-      if (altFromSrc) {
-        img.alt = altFromSrc;
-        return;
-      }
-
-      // Check srcset if exists
-      if (img.srcset) {
-        const srcsetUrls = img.srcset.split(',').map(s => s.trim().split(' ')[0]);
-        for (const url of srcsetUrls) {
-          const altFromSrcset = checkUrl(url);
-          if (altFromSrcset) {
-            img.alt = altFromSrcset;
-            break;
-          }
-        }
-      }
-    });
-  },
-
-  processAccessibilityElements(accessibilityData) {
-    if (!Array.isArray(accessibilityData)) return;
-
-    accessibilityData.forEach(element => {
-      const { raw_tag, tag_id, class_names, aria_label, element_hash } = element;
-
-      // Try to find the element using various selectors
-      let targetElement = null;
-
-      // Parse the raw_tag to extract attributes
-      const tempDiv = document.createElement('div');
-      tempDiv.innerHTML = raw_tag;
-      const parsedElement = tempDiv.firstElementChild;
-
-      if (parsedElement) {
-        const tagName = parsedElement.tagName.toLowerCase();
-        const attributes = Array.from(parsedElement.attributes)
-          .map(attr => `[${attr.name}="${attr.value}"]`)
-          .join('');
-
-        try {
-          // Create a specific selector based on the parsed element
-          const selector = `${tagName}${attributes}`;
-          targetElement = document.querySelector(selector);
-        } catch (e) {
-          return;
-        }
-
-        // If not found, try a more lenient selector
-        if (!targetElement) {
-          const lenientSelector = `${tagName}[name="${parsedElement.getAttribute('name')}"]`;
-          targetElement = document.querySelector(lenientSelector);
-        }
-      }
-
-      // If still not found, try the previous methods
-      if (!targetElement && tag_id) {
-        targetElement = document.getElementById(tag_id);
-      }
-      if (!targetElement && class_names) {
-        targetElement = document.querySelector(`.${class_names.split(' ').join('.')}`);
-      }
-
-      if (targetElement) {
-        this.improveAccessibility(targetElement, aria_label);
-      }
-    });
-  },
-
-  improveAccessibility(element, suggestedAriaLabel) {
-    if (!element.getAttribute('aria-label') && suggestedAriaLabel) {
-      element.setAttribute('aria-label', suggestedAriaLabel);
-    }
-
-    // Improve form controls
-    if (element.tagName === 'INPUT' || element.tagName === 'SELECT' || element.tagName === 'TEXTAREA') {
-      if (!element.getAttribute('id')) {
-        const uniqueId = `seojuice-${Math.random().toString(36).substr(2, 9)}`;
-        element.setAttribute('id', uniqueId);
-      }
-      if (!element.getAttribute('aria-label')) {
-        element.setAttribute('aria-label', suggestedAriaLabel || element.placeholder || element.name || 'Input field');
-      }
-    }
-
-    // Improve links
-    if (element.tagName === 'A' && !element.getAttribute('aria-label')) {
-      element.setAttribute('aria-label', suggestedAriaLabel || 'Link');
-    }
-
-    // Improve buttons
-    if (element.tagName === 'BUTTON' && !element.getAttribute('aria-label')) {
-      element.setAttribute('aria-label', suggestedAriaLabel || 'Button');
-    }
-  }
 };
 
 function registerListeners() {
@@ -579,9 +353,9 @@ function registerListeners() {
       // Wait for the DOM to stabilize after route change
       setTimeout(() => {
         if (document.readyState === 'complete') {
-          SEOJuice.init();
+          SeoAutomationScript.init();
         } else {
-          window.addEventListener('load', SEOJuice.init.bind(SEOJuice));
+          window.addEventListener('load', SeoAutomationScript.init.bind(SeoAutomationScript));
         }
       }, 200);
     }
