@@ -4,11 +4,11 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 
-@app.get('/')
+@app.get('/how-it-works')
 async def index():
     # return render_template('index.html')
     # return render_template('index2.html')
-    return render_template('index3.html')
+    return render_template('index4.html')
 
 @app.get('/test_data')
 async def test_data():

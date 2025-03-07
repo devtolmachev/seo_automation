@@ -75,10 +75,16 @@ const SeoAutomationScript = {
     fetch(
       `https://xano.rankauthority.com/api:ZnCZv4aQ/content_recommendations?status=true&website_id=${website_id}&app_version=${app_version}&page_id=${path}`
     )
-      .then(response => response.json())
-      .then((json) => {
+      .then(function (response) {
+        return response.text();
+      })
+      .then((text) => {
+        // clean response
+        const cleanedText = text.replace(/\\u003E/g, '>').replace(/\\u003C/g, '<').replace(/\\u0026/g, '&');
+        const json = JSON.parse(cleanedText);
+
         this.processSuggestions.bind(this)(json)
-        var cssSection = document.getElementById('helper')
+        var cssSection = document.getElementById('helper');
         document.head.removeChild(cssSection);
       })
       .catch(this.showError);
@@ -92,9 +98,9 @@ const SeoAutomationScript = {
         return;
       };
 
-      if (location.origin != id_page) {
-        return;
-      }
+      // if (location.origin != id_page) {
+      //   return;
+      // }
 
       if (type === "keyword" || type === "content") {
         this.processContent(
@@ -132,10 +138,6 @@ const SeoAutomationScript = {
 
   processContent(selector, old_data, new_data, ignoreCase, forceReplaceContent, attributeToUpdate) {
     var alreadyReplaced = new Set();
-    /**
-    * Обновляет указанный HTML элементы если они содержат указанное ключевое слово.
-    * @param {HTMLElement} element - HTML элемент для обновления.
-    */
     const updateElement = (element) => {
       this.replaceText(
         element, 
@@ -225,11 +227,10 @@ const SeoAutomationScript = {
         NodeFilter.SHOW_ALL,
         {
             acceptNode: function(node) {
-              // Проверяем, есть ли у узла нужный атрибут
               if (node.hasAttribute(attributeName)) {
-                  return NodeFilter.FILTER_ACCEPT; // Принимаем узел, если атрибут найден
+                  return NodeFilter.FILTER_ACCEPT; 
               }
-              return NodeFilter.FILTER_SKIP; // Пропускаем узел, если атрибут не найден
+              return NodeFilter.FILTER_SKIP;
             }
         }
     );
@@ -256,8 +257,7 @@ const SeoAutomationScript = {
 
     var currentNode = walker.currentNode;
     while (currentNode) {
-      // if (alreadyReplaced.has(keyword.toLowerCase())) return;
-
+      
       if (currentNode === document.documentElement) {
         currentNode = walker.nextNode();
         continue
@@ -302,7 +302,6 @@ const SeoAutomationScript = {
   },
 
   replaceTextNodeOnly(element, oldText, newText, forceSet, ignoreCase) {
-    // Получаем все дочерние узлы элемента
     const childNodes = Array.from(element.childNodes);
 
     if (!childNodes || childNodes.length === 0) {
@@ -316,17 +315,12 @@ const SeoAutomationScript = {
     }
 
     childNodes.forEach(node => {
-        // Проверяем, является ли узел текстовым
         if (node.nodeType === Node.TEXT_NODE) {
-            // Если текст узла содержит старый текст, заменяем его
             if (node.textContent.includes(oldText)) {
-                // Создаем паттерн с учетом `ignoreCase` параметра
                 let flags = ignoreCase ? 'gi' : 'g';
                 let pattern = new RegExp(oldText, flags);
 
-                // Создаем новый текстовый узел с новым текстом
                 const newTextNode = document.createTextNode(node.textContent.replaceAll(pattern, newText));
-                // Заменяем старый текстовый узел на новый
                 element.replaceChild(newTextNode, node);
             }
         }
