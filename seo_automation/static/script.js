@@ -13,9 +13,9 @@ const SeoAutomationScript = {
         display: block;
       }
     `;
-    cssSection.appendChild(document.createTextNode(css));
-    document.body.classList.add('hidden-dom-element');
-    document.head.appendChild(cssSection);
+    // cssSection.appendChild(document.createTextNode(css));
+    // document.body.classList.add('hidden-dom-element');
+    // document.head.appendChild(cssSection);
 
     const currentPageUrl = this.cleanUrl(window.location.href);
     this.fetchSuggestions(currentPageUrl);
@@ -66,14 +66,27 @@ const SeoAutomationScript = {
   showError(text) {
     console.warn('[SeoAutomationScript] Error:', text);
   },
-
+  
   fetchSuggestions(url) {
     let element = document.getElementById('seo_automator')
     let website_id = element.getAttribute('data-website-id')
-    let app_version = element.getAttribute('data-app-version') || "prod"
+    let app_version = element.getAttribute('data-app-version') || "test"
+
+    let header_value = "test_base";
+    if (app_version === "prod") {
+      header_value = "live";
+    }
+
     let path = window.location.pathname;
     fetch(
-      `https://xano.rankauthority.com/api:ZnCZv4aQ/content_recommendations?status=true&website_id=${website_id}&app_version=${app_version}&page_id=${path}`
+      // `http://127.0.0.1:6785/test_data`,
+      `https://xano.rankauthority.com/api:ZnCZv4aQ/content_recommendations?status=true&website_id=${website_id}&app_version=${app_version}&page_id=${path}`,
+      {
+        method: "GET",
+        headers: {
+          "X-Data-Source": header_value,
+        },
+      }
     )
       .then(function (response) {
         return response.text();
@@ -92,15 +105,11 @@ const SeoAutomationScript = {
 
   processSuggestions(data) {
     const processSuggestion = (data) => {
-      var { id, id_page, status, type, selector, old, _new, ignore_case } = data;
+      var { id, id_page, status, type, selector, old, _new, ignore_case, new_selector } = data;
       _new = data.new;
       if (!status) {
         return;
       };
-
-      // if (location.origin != id_page) {
-      //   return;
-      // }
 
       if (type === "keyword" || type === "content") {
         this.processContent(
@@ -109,7 +118,8 @@ const SeoAutomationScript = {
           _new, 
           ignore_case, 
           data.force_set,
-          data.attribute_to_update
+          data.attribute_to_update,
+          type === "content" ? new_selector : null
         );
       } else if (type === "image") {
         this.processImageAlt(
@@ -136,7 +146,15 @@ const SeoAutomationScript = {
     window.loadedSeoAutomationScript = false;
   },
 
-  processContent(selector, old_data, new_data, ignoreCase, forceReplaceContent, attributeToUpdate) {
+  processContent(
+    selector, 
+    old_data, 
+    new_data, 
+    ignoreCase, 
+    forceReplaceContent, 
+    attributeToUpdate,
+    new_selector
+  ) {
     var alreadyReplaced = new Set();
     const updateElement = (element) => {
       this.replaceText(
@@ -146,9 +164,12 @@ const SeoAutomationScript = {
         true, 
         ignoreCase, 
         alreadyReplaced, 
-        forceReplaceContent,
+        true,
         attributeToUpdate
       );
+      if (new_selector) {
+        this.moveElement(element, new_selector);
+      }
     }
 
     if (!selector) {
@@ -158,8 +179,34 @@ const SeoAutomationScript = {
     element.forEach(updateElement);
   },
 
+  moveElement(element, newSelector) {
+    const selectorParts = newSelector.split(/[\s.]+/);
+    
+    const tagName = selectorParts[selectorParts.length - 1] || 'div';
+    const newElement = document.createElement(tagName);
+    
+    Array.from(element.attributes).forEach(attr => {
+      if (attr.name !== 'class') {
+        newElement.setAttribute(attr.name, attr.value);
+      }
+    });
+    
+    newElement.innerHTML = element.innerHTML;
+    
+    if (element.parentNode) {
+      element.parentNode.insertBefore(newElement, element.nextSibling);
+    } else {
+      document.body.appendChild(newElement);
+    }
+    
+    element.remove();
+  },
+
   processImageAlt(selector, old_alt, new_alt) {
     const updateElement = (element) => {
+      if (old_alt && element.alt != old_alt) {
+        return;
+      }
       element.alt = new_alt;
     }
 
@@ -278,7 +325,10 @@ const SeoAutomationScript = {
             let pattern = new RegExp(keyword, flags);
             replacement = value.replaceAll(pattern, newText)
           }
-          currentNode.setAttribute(attributeToUpdate, replacement)
+          if (currentNode.setAttribute) {
+            
+            currentNode.setAttribute(attributeToUpdate, replacement)
+          }
         }
 
         currentNode = walker.nextNode();

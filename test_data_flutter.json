@@ -1,0 +1,11 @@
+[
+    {
+        "type": "content",
+        "new": "[UPDATED] A Flutter package that provides an Emoji picker widget with 1500+ emojis in 8 categories.",
+        "selector": "body > main > div.detail-wrapper.-active.-has-info-box > div.detail-container > div > p.detail-lead-text",
+        "new_selector": "body > main > div.detail-wrapper.-active.-has-info-box > div.detail-container > h1",
+        "id": "id",
+        "id_page": "id_page",
+        "status": true
+    }
+]

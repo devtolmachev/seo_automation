@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <script id="seo_automator" data-website-id="127.0.0.1" src="{{url_for('static', filename='script.js')}}"></script>
+  <script src="https://www.googletagmanager.com/gtm.js?id=GTM-MX6DBN9" async="async"></script><script src="/static/hash-mh7qv2oc/js/gtm.js" async="async"></script><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="twitter:card" content="summary"/><meta name="twitter:site" content="@dart_lang"/><meta name="twitter:description" content="A Flutter package that provides an Emoji picker widget with 1500+ emojis in 8 categories."/><meta name="twitter:image" content="https://pub.dev/static/hash-mh7qv2oc/img/pub-dev-icon-cover-image.png"/><meta property="og:type" content="website"/><meta property="og:site_name" content="Dart packages"/><meta property="og:title" content="emoji_picker_flutter | Flutter package"/><meta property="og:description" content="A Flutter package that provides an Emoji picker widget with 1500+ emojis in 8 categories."/><meta property="og:image" content="https://pub.dev/static/hash-mh7qv2oc/img/pub-dev-icon-cover-image.png"/><meta property="og:url" content="https://pub.dev/packages/emoji_picker_flutter"/><title>emoji_picker_flutter | Flutter package</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&amp;family=Google+Sans+Display:wght@400&amp;family=Google+Sans+Text:wght@400;500;700&amp;family=Google+Sans+Mono:wght@400;700&amp;display=swap"/><link rel="shortcut icon" href="/static/hash-mh7qv2oc/img/flutter-logo-32x32.png"/><meta rel="apple-touch-icon" href="/static/hash-mh7qv2oc/img/flutter-logo-32x32.png"/><meta rel="apple-touch-icon-precomposed" href="/static/hash-mh7qv2oc/img/flutter-logo-32x32.png"/><link rel="stylesheet" href="https://www.gstatic.com/glue/v25_0/ccb.min.css"/><link rel="search" type="application/opensearchdescription+xml" title="Dart packages" href="/osd.xml"/><link rel="canonical" href="https://pub.dev/packages/emoji_picker_flutter"/><meta name="description" content="A Flutter package that provides an Emoji picker widget with 1500+ emojis in 8 categories."/><link rel="alternate" type="application/atom+xml" title="Updated Packages Feed for Pub" href="/feed.atom"/><link rel="stylesheet" type="text/css" href="/static/hash-mh7qv2oc/material/bundle/styles.css"/><link rel="stylesheet" type="text/css" href="/static/hash-mh7qv2oc/css/style.css"/><script src="/static/hash-mh7qv2oc/material/bundle/script.min.js" defer="defer"></script><script src="/static/hash-mh7qv2oc/js/script.dart.js" defer="defer"></script><script src="https://www.gstatic.com/brandstudio/kato/cookie_choice_component/cookie_consent_bar.v3.js" defer="defer" data-autoload-cookie-consent-bar="true"></script><meta name="pub-page-data" content="eyJwa2dEYXRhIjp7InBhY2thZ2UiOiJlbW9qaV9waWNrZXJfZmx1dHRlciIsInZlcnNpb24iOiI0LjMuMCIsImxpa2VzIjo1ODgsInB1Ymxpc2hlcklkIjoiZmludGFzeXMuY29tIiwiaXNEaXNjb250aW51ZWQiOmZhbHNlLCJpc0xhdGVzdCI6dHJ1ZX0sInNlc3Npb25Bd2FyZSI6ZmFsc2V9"/><link rel="preload" href="/static/hash-mh7qv2oc/highlight/highlight-with-init.js" as="script"/></head><body class="light-theme"><script src="/static/hash-mh7qv2oc/js/dark-init.js"></script><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MX6DBN9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div class="site-header"><button class="hamburger" aria-label="menu toggle"></button><a class="logo" href="/" aria-label="Go to the landing page of pub.dev"><img class="site-logo" src="/static/hash-mh7qv2oc/img/pub-dev-logo.svg" alt="" width="140" height="30" role="presentation"/></a><div class="site-header-space"></div><div class="site-header-mask"></div><div class="site-header-search"><form action="/packages" method="GET"><input class="site-header-search-input" name="q" placeholder="New search..." autocomplete="on" title="Search"/></form></div><nav class="site-header-nav scroll-container"><div class="nav-login-container"><button id="-account-login" class="nav-main-button link">Sign in</button></div><div class="nav-container nav-help-container hoverable"><button class="nav-main-button">Help</button><div class="nav-hover-popup"><div class="nav-table-columns"><div class="nav-table-column"><h3>pub.dev</h3><a class="nav-link" href="/help/search" rel="noopener" target="_blank">Searching for packages</a><a class="nav-link" href="/help/scoring" rel="noopener" target="_blank">Package scoring and pub points</a></div><div class="nav-table-column"><h3>Flutter</h3><a class="nav-link" href="https://flutter.dev/using-packages/" rel="noopener" target="_blank">Using packages</a><a class="nav-link" href="https://flutter.dev/developing-packages/" rel="noopener" target="_blank">Developing packages and plugins</a><a class="nav-link" href="https://dart.dev/tools/pub/publishing" rel="noopener" target="_blank">Publishing a package</a></div><div class="nav-table-column"><h3>Dart</h3><a class="nav-link" href="https://dart.dev/guides/packages" rel="noopener" target="_blank">Using packages</a><a class="nav-link" href="https://dart.dev/tools/pub/publishing" rel="noopener" target="_blank">Publishing a package</a></div></div></div></div><div class="nav-container nav-help-container-mobile foldable"><h3 class="foldable-button">pub.dev <img class="foldable-icon" src="/static/hash-mh7qv2oc/img/nav-mobile-foldable-icon.svg" alt="toggle folding of the section" width="13" height="6"/></h3><div class="foldable-content"><a class="nav-link" href="/help/search" rel="noopener" target="_blank">Searching for packages</a><a class="nav-link" href="/help/scoring" rel="noopener" target="_blank">Package scoring and pub points</a></div></div><div class="nav-container nav-help-container-mobile foldable"><h3 class="foldable-button">Flutter <img class="foldable-icon" src="/static/hash-mh7qv2oc/img/nav-mobile-foldable-icon.svg" alt="toggle folding of the section" width="13" height="6"/></h3><div class="foldable-content"><a class="nav-link" href="https://flutter.dev/using-packages/" rel="noopener" target="_blank">Using packages</a><a class="nav-link" href="https://flutter.dev/developing-packages/" rel="noopener" target="_blank">Developing packages and plugins</a><a class="nav-link" href="https://dart.dev/tools/pub/publishing" rel="noopener" target="_blank">Publishing a package</a></div></div><div class="nav-container nav-help-container-mobile foldable"><h3 class="foldable-button">Dart <img class="foldable-icon" src="/static/hash-mh7qv2oc/img/nav-mobile-foldable-icon.svg" alt="toggle folding of the section" width="13" height="6"/></h3><div class="foldable-content"><a class="nav-link" href="https://dart.dev/guides/packages" rel="noopener" target="_blank">Using packages</a><a class="nav-link" href="https://dart.dev/tools/pub/publishing" rel="noopener" target="_blank">Publishing a package</a></div></div></nav><button class="-pub-theme-toggle" aria-label="light/dark theme toggle"></button></div><div id="banner-container"></div><main class="container"><div class="detail-wrapper -active -has-info-box"><div class="detail-header -is-loose"><div class="detail-container"><div class="detail-header-outer-block"><div class="detail-header-content-block"><h1 class="title pub-monochrome-icon-hoverable">emoji_picker_flutter 4.3.0 <span class="pkg-page-title-copy"><img class="pub-monochrome-icon pkg-page-title-copy-icon filter-invert-on-dark" src="/static/hash-mh7qv2oc/img/content-copy-icon.svg" alt="copy &quot;emoji_picker_flutter: ^4.3.0&quot; to clipboard" width="18" height="18" title="Copy &quot;emoji_picker_flutter: ^4.3.0&quot; to clipboard" data-copy-content="emoji_picker_flutter: ^4.3.0" data-ga-click-event="copy-package-version"/><div class="pkg-page-title-copy-feedback"><span class="code">emoji_picker_flutter: ^4.3.0</span> copied to clipboard</div></span></h1><div class="metadata">Published <span><a class="-x-ago" href="" title="Jan 22, 2025" role="button" data-timestamp="1737520951574">2 months ago</a></span> • <a class="-pub-publisher" href="/publishers/fintasys.com"><img class="-pub-publisher-shield filter-invert-on-dark" src="/static/hash-mh7qv2oc/img/material-icon-verified.svg" alt="verified publisher" width="14" height="14" title="Published by a pub.dev verified publisher"/>fintasys.com</a><span class="package-badge" title="Package is compatible with Dart 3.">Dart 3 compatible</span></div><div class="detail-tags-and-like"><div class="detail-tags"><div class="-pub-tag-badge"><span class="tag-badge-main">SDK</span><a class="tag-badge-sub" href="/packages?q=sdk%3Aflutter" rel="nofollow" title="Packages compatible with Flutter SDK">Flutter</a></div><div class="-pub-tag-badge"><span class="tag-badge-main">Platform</span><a class="tag-badge-sub" href="/packages?q=platform%3Aandroid" rel="nofollow" title="Packages compatible with Android platform">Android</a><a class="tag-badge-sub" href="/packages?q=platform%3Aios" rel="nofollow" title="Packages compatible with iOS platform">iOS</a><a class="tag-badge-sub" href="/packages?q=platform%3Alinux" rel="nofollow" title="Packages compatible with Linux platform">Linux</a><a class="tag-badge-sub" href="/packages?q=platform%3Amacos" rel="nofollow" title="Packages compatible with macOS platform">macOS</a><a class="tag-badge-sub" href="/packages?q=platform%3Aweb" rel="nofollow" title="Packages compatible with Web platform">web</a><a class="tag-badge-sub" href="/packages?q=platform%3Awindows" rel="nofollow" title="Packages compatible with Windows platform">Windows</a></div></div><div class="detail-like"><button id="-pub-like-icon-button" class="mdc-icon-button" data-ga-click-event="toggle-like" aria-pressed="false" title="Like this package"><img class="mdc-icon-button__icon" src="/static/hash-mh7qv2oc/img/like-inactive.svg" alt="liked status: inactive" width="18" height="18"/><img class="mdc-icon-button__icon mdc-icon-button__icon--on" src="/static/hash-mh7qv2oc/img/like-active.svg" alt="liked status: active" width="18" height="18"/></button><span class="likes-count"><span id="likes-count">588</span></span></div></div></div></div></div></div><div class="detail-container"><div class="detail-lead"><div class="detail-metadata-toggle"><div class="detail-metadata-toggle-icon">→</div><h3 class="detail-lead-title">Metadata</h3></div><p class="detail-lead-text">A Flutter package that provides an Emoji picker widget with 1500+ emojis in 8 categories.</p><p class="detail-lead-more"><a class="detail-metadata-toggle">More...</a></p></div></div><div class="detail-body"><div class="detail-tabs"><div class="detail-tabs-wide-header"><div class="detail-container"><ul class="detail-tabs-header"><li class="detail-tab tab-button detail-tab-readme-title -active">Readme</li><li class="detail-tab tab-link detail-tab-changelog-title"><a href="/packages/emoji_picker_flutter/changelog" role="button">Changelog</a></li><li class="detail-tab tab-link detail-tab-example-title"><a href="/packages/emoji_picker_flutter/example" role="button">Example</a></li><li class="detail-tab tab-link detail-tab-installing-title"><a href="/packages/emoji_picker_flutter/install" role="button">Installing</a></li><li class="detail-tab tab-link detail-tab-versions-title"><a href="/packages/emoji_picker_flutter/versions" role="button">Versions</a></li><li class="detail-tab tab-link detail-tab-analysis-title"><a href="/packages/emoji_picker_flutter/score" role="button">Scores</a></li></ul></div></div><div class="detail-container detail-body-main"><div class="detail-tabs-content"><section class="tab-content detail-tab-readme-content -active markdown-body"><p align="center">
+<a href="https://github.com/fintasys" rel="ugc"><img src="https://img.shields.io/badge/platform-flutter-blue.svg" alt="platform flutter"></a>
+<a href="https://github.com/fintasys/emoji_picker_flutter/actions" rel="ugc"><img src="https://github.com/fintasys/emoji_picker_flutter/workflows/emoji_picker_flutter/badge.svg" alt="build"></a>
+<a href="https://github.com/fintasys/emoji_picker_flutter" rel="ugc"><img src="https://img.shields.io/github/stars/fintasys/emoji_picker_flutter.svg?style=flat&amp;logo=github&amp;colorB=deeppink&amp;label=stars" alt="Star on Github"></a>
+<a href="https://opensource.org/licenses/BSD-2-Clause" rel="ugc"><img src="https://img.shields.io/badge/License-BSD%202--Clause-orange.svg" alt="License: BSD-2-Clause"></a>
+</p>
+<h1 id="emoji_picker_flutter" class="hash-header">emoji_picker_flutter <a href="#emoji_picker_flutter" class="hash-link">#</a></h1>
+<p>Yet another Emoji Picker for Flutter 🤩</p>
+<img src="https://user-images.githubusercontent.com/11667234/182385843-01f24231-2bbb-4bd6-b8ae-e2058be8be3f.png">
+<h2 id="key-features" class="hash-header">Key features <a href="#key-features" class="hash-link">#</a></h2>
+<ul>
+<li>Lightweight Package</li>
+<li>Fast Loading</li>
+<li>Null-safety</li>
+<li>Completely customizable</li>
+<li>Material Design and Cupertino mode</li>
+<li>Emojis that cannot be displayed are filtered out (Android Only)</li>
+<li>Optional recently used emoji tab</li>
+<li>Skin Tone Support</li>
+<li>Custom-Font Support</li>
+<li>Search Option</li>
+<li>Localization (supporting 8 Languages)</li>
+</ul>
+<p><a href="https://www.buymeacoffee.com/fintasys" rel="ugc"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="&quot;Buy Me A Coffee&quot;"></a></p>
+<h2 id="getting-started" class="hash-header">Getting Started <a href="#getting-started" class="hash-link">#</a></h2>
+<pre><code class="language-dart">
+import 'package:flutter/foundation.dart' as foundation;
+
+EmojiPicker(
+    onEmojiSelected: (Category category, Emoji emoji) {
+        // Do something when emoji is tapped (optional)
+    },
+    onBackspacePressed: () {
+        // Do something when the user taps the backspace button (optional)
+        // Set it to null to hide the Backspace-Button
+    },
+    textEditingController: textEditingController, // pass here the same [TextEditingController] that is connected to your input field, usually a [TextFormField]
+    config: Config(
+        height: 256,
+        bgColor: const Color(0xFFF2F2F2),
+        checkPlatformCompatibility: true,
+        emojiViewConfig: EmojiViewConfig(
+        // Issue: https://github.com/flutter/flutter/issues/28894
+        emojiSizeMax: 28 *
+        (foundation.defaultTargetPlatform == TargetPlatform.iOS
+            ?  1.20
+            :  1.0),
+        ),
+        viewOrderConfig: const ViewOrderConfig(
+            top: EmojiPickerItem.categoryBar,
+            middle: EmojiPickerItem.emojiView,
+            bottom: EmojiPickerItem.searchBar,
+        ),
+        skinToneConfig: const SkinToneConfig(),
+        categoryViewConfig: const CategoryViewConfig(),
+        bottomActionBarConfig: const BottomActionBarConfig(),
+        searchViewConfig: const SearchViewConfig(),
+    ),
+)
+
+</code></pre>
+<h2 id="examples" class="hash-header">Examples <a href="#examples" class="hash-link">#</a></h2>
+<p>All examples can be found <a href="https://github.com/Fintasys/emoji_picker_flutter/tree/master/example/lib" rel="ugc">here</a></p>
+<ol>
+<li>
+<p>Default (Some Emoji might not be displayed correctly e.g. Frowning Face 🚨 Will be fixed with 3.17)</p>
+<img src="https://raw.githubusercontent.com/Fintasys/emoji_picker_flutter/41c3e6d2cfe69375e263f42cfe06dbad7936bde1/screenshot/example_default_android.png" width="300">
+</li>
+<li>
+<p>Custom Font (Display all emoji correctly in the style of the font, additional ~15mb e.g. with Google Fonts) - Might causes performance issues on iOS (see <a href="https://github.com/Fintasys/emoji_picker_flutter/issues/205" rel="ugc">issue 205</a>)</p>
+<p><img src="https://raw.githubusercontent.com/Fintasys/emoji_picker_flutter/version-2.0/screenshot/example_custom_font_android.png" width="300"> <img src="https://raw.githubusercontent.com/Fintasys/emoji_picker_flutter/version-2.0/screenshot/example_custom_font_android_2.png" width="300"></p>
+</li>
+<li>
+<p>WhatsApp like customization</p>
+<p><img src="https://raw.githubusercontent.com/Fintasys/emoji_picker_flutter/version-2.0/screenshot/example_whatsapp_emoji_view.png" width="300"> <img src="https://raw.githubusercontent.com/Fintasys/emoji_picker_flutter/version-2.0/screenshot/example_whatsapp_search_view.png" width="300"></p>
+</li>
+</ol>
+<p>*All screenshots from Android. iOS displays by default most emoji correctly.</p>
+<h2 id="config" class="hash-header">Config <a href="#config" class="hash-link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>property</th>
+<th>description</th>
+<th>default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>height</td>
+<td>Height of Emoji Picker</td>
+<td>256</td>
+</tr>
+<tr>
+<td>viewOrderConfig</td>
+<td>The exact order in which category view, emoji view and bottom bar appear</td>
+<td>const ViewOrderConfig()</td>
+</tr>
+<tr>
+<td>checkPlatformCompatibility</td>
+<td>Whether to filter out glyphs that platform cannot render with the default font (Android).</td>
+<td>true</td>
+</tr>
+<tr>
+<td>emojiSet</td>
+<td>Custom emoji set, can be built based on <code>defaultEmojiSet</code> provided by the library.</td>
+<td>null</td>
+</tr>
+<tr>
+<td>emojiTextStyle</td>
+<td>Text style to apply to individual emoji icons. Can be used to define custom emoji font either with GoogleFonts library or bundled with the app.</td>
+<td>null</td>
+</tr>
+<tr>
+<td>customBackspaceIcon</td>
+<td>Custom Icon for Backspace button</td>
+<td>null</td>
+</tr>
+<tr>
+<td>customSearchIcon</td>
+<td>Custom Icon for Search button</td>
+<td>null</td>
+</tr>
+<tr>
+<td>emojiViewConfig</td>
+<td>Emoji view config</td>
+<td>const EmojiViewConfig()</td>
+</tr>
+<tr>
+<td>skinToneConfig</td>
+<td>Skin tone config</td>
+<td>const SkinToneConfig</td>
+</tr>
+<tr>
+<td>categoryViewConfig</td>
+<td>Category view config</td>
+<td>const CategoryViewConfig</td>
+</tr>
+<tr>
+<td>bottomActionBarConfig</td>
+<td>Bottom action bar config</td>
+<td>const BottomActionBarConfig()</td>
+</tr>
+<tr>
+<td>searchViewConfig</td>
+<td>Search View config</td>
+<td>const SearchViewConfig</td>
+</tr>
+</tbody>
+</table>
+<h2 id="emoji-view-config" class="hash-header">Emoji View Config <a href="#emoji-view-config" class="hash-link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>property</th>
+<th>description</th>
+<th>default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>columns</td>
+<td>Number of emojis per row</td>
+<td>7</td>
+</tr>
+<tr>
+<td>emojiSizeMax</td>
+<td>Width and height the emoji will be maximal displayed</td>
+<td>32.0</td>
+</tr>
+<tr>
+<td>backgroundColor</td>
+<td>The background color of the emoji view</td>
+<td>const Color(0xFFEBEFF2)</td>
+</tr>
+<tr>
+<td>verticalSpacing</td>
+<td>Vertical spacing between emojis</td>
+<td>0</td>
+</tr>
+<tr>
+<td>horizontalSpacing</td>
+<td>Horizontal spacing between emojis</td>
+<td>0</td>
+</tr>
+<tr>
+<td>gridPadding</td>
+<td>The padding of GridView</td>
+<td>EdgeInsets.zero</td>
+</tr>
+<tr>
+<td>recentsLimit</td>
+<td>Limit of recently used emoji that will be saved</td>
+<td>28</td>
+</tr>
+<tr>
+<td>replaceEmojiOnLimitExceed</td>
+<td>Replace latest emoji on recents list on limit exceed</td>
+<td>false</td>
+</tr>
+<tr>
+<td>noRecents</td>
+<td>A widget (usually [Text]) to be displayed if no recent emojis to display. Needs to be <code>const</code> Widget!</td>
+<td>Text('No Recents', style: TextStyle(fontSize: 20, color: Colors.black26), textAlign: TextAlign.center)</td>
+</tr>
+<tr>
+<td>loadingIndicator</td>
+<td>A widget to display while emoji picker is initializing. Needs to be <code>const</code> Widget!</td>
+<td>SizedBox.shrink()</td>
+</tr>
+<tr>
+<td>buttonMode</td>
+<td>Choose between Material and Cupertino button style</td>
+<td>ButtonMode.MATERIAL</td>
+</tr>
+</tbody>
+</table>
+<h2 id="skintone-config" class="hash-header">SkinTone Config <a href="#skintone-config" class="hash-link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>property</th>
+<th>description</th>
+<th>default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>enableSkinTones</td>
+<td>Enable feature to select a skin tone of certain emoji's</td>
+<td>true</td>
+</tr>
+<tr>
+<td>dialogBackgroundColor</td>
+<td>The background color of the skin tone dialog</td>
+<td>Colors.white</td>
+</tr>
+<tr>
+<td>indicatorColor</td>
+<td>Color of the small triangle next to multiple skin tone emoji</td>
+<td>Colors.grey</td>
+</tr>
+</tbody>
+</table>
+<h2 id="category-view-config" class="hash-header">Category View Config <a href="#category-view-config" class="hash-link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>property</th>
+<th>description</th>
+<th>default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tabBarHeight</td>
+<td>Height of category tab bar</td>
+<td>46.0</td>
+</tr>
+<tr>
+<td>tabIndicatorAnimDuration</td>
+<td>Duration of tab indicator to animate to next category</td>
+<td>Duration(milliseconds: 300)</td>
+</tr>
+<tr>
+<td>initCategory</td>
+<td>The initial Category that will be selected</td>
+<td>Category.RECENT</td>
+</tr>
+<tr>
+<td>recentTabBehavior</td>
+<td>Show extra tab with recently / popular used emoji</td>
+<td>RecentTabBehavior.RECENT</td>
+</tr>
+<tr>
+<td>extraTab</td>
+<td>Add extra tab to category tab bar for backspace or search button</td>
+<td>CategoryExtraTab.NONE</td>
+</tr>
+<tr>
+<td>backgroundColor</td>
+<td>Background color of category tab bar</td>
+<td>const Color(0xFFEBEFF2)</td>
+</tr>
+<tr>
+<td>indicatorColor</td>
+<td>The color of the category indicator</td>
+<td>Colors.blue</td>
+</tr>
+<tr>
+<td>iconColor</td>
+<td>The color of the category icons</td>
+<td>Colors.grey</td>
+</tr>
+<tr>
+<td>iconColorSelected</td>
+<td>The color of the category icon when selected</td>
+<td>Colors.blue</td>
+</tr>
+<tr>
+<td>backspaceColor</td>
+<td>The color of the backspace icon button</td>
+<td>Colors.blue</td>
+</tr>
+<tr>
+<td>categoryIcons</td>
+<td>Determines the icon to display for each Category. You can change icons by setting them in the constructor.</td>
+<td>CategoryIcons()</td>
+</tr>
+<tr>
+<td>customCategoryView</td>
+<td>Customize the category widget</td>
+<td>null</td>
+</tr>
+</tbody>
+</table>
+<h2 id="bottom-action-bar-config" class="hash-header">Bottom Action Bar Config <a href="#bottom-action-bar-config" class="hash-link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>property</th>
+<th>description</th>
+<th>default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>showBackspaceButton</td>
+<td>Show backspace button in bottom action bar</td>
+<td>true</td>
+</tr>
+<tr>
+<td>showSearchViewButton</td>
+<td>Show search-view button in bottom action bar</td>
+<td>true</td>
+</tr>
+<tr>
+<td>backgroundColor</td>
+<td>Background color of bottom action bar</td>
+<td>Colors.blue</td>
+</tr>
+<tr>
+<td>buttonIconColor</td>
+<td>Icon color of buttons</td>
+<td>Colors.white</td>
+</tr>
+<tr>
+<td>inputTextStyle</td>
+<td>Custom TextStyle of TextField for input text</td>
+<td>null</td>
+</tr>
+<tr>
+<td>hintTextStyle</td>
+<td>Custom TextStyle of TextField for hint</td>
+<td>null</td>
+</tr>
+<tr>
+<td>customBottomActionBar</td>
+<td>Customize the bottom action bar widget</td>
+<td>null</td>
+</tr>
+</tbody>
+</table>
+<h2 id="search-view-config" class="hash-header">Search View Config <a href="#search-view-config" class="hash-link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>property</th>
+<th>description</th>
+<th>default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>backgroundColor</td>
+<td>Background color of search view</td>
+<td>const Color(0xFFEBEFF2)</td>
+</tr>
+<tr>
+<td>buttonColor</td>
+<td>Fill color of hide search view button</td>
+<td>Colors.transparent</td>
+</tr>
+<tr>
+<td>buttonIconColor</td>
+<td>Icon color of hide search view button</td>
+<td>Colors.black26</td>
+</tr>
+<tr>
+<td>hintText</td>
+<td>Custom hint text</td>
+<td>'Search'</td>
+</tr>
+<tr>
+<td>customSearchView</td>
+<td>Customize search view widget</td>
+<td>null</td>
+</tr>
+</tbody>
+</table>
+<h2 id="backspace-button" class="hash-header">Backspace-Button <a href="#backspace-button" class="hash-link">#</a></h2>
+<p>Backspace button is enabled by default on the bottom action bar. If you prefer to have the backspace button inside the category tab bar, you can enable it inside the <code>CategoryViewConfig</code> and then <code>extraTab</code> to <code>CategoryExtraTab.BACKSPACE</code>.
+You can listen to the Backspace tap event by registering a callback inside <code>onBackspacePressed: () { }</code>. This will make it easier for your user to remove an added Emoji without showing the keyboard. Check out the example for more details about usage.</p>
+<p>Bottom Backspace Button</p>
+<img src="https://github.com/Fintasys/emoji_picker_flutter/blob/version-2.0/screenshot/backspace_bottom.png?raw=true" width="300">
+<p>Top Backspace Button</p>
+<img src="https://user-images.githubusercontent.com/11667234/182386154-b4b2435f-3a85-454d-a671-f857e5a1c7bd.png" width="300">
+<h2 id="custom-view" class="hash-header">Custom view <a href="#custom-view" class="hash-link">#</a></h2>
+<p>The appearance is completely customizable by setting <code>customWidget</code> property. If properties in Config are not enough you can inherit from <code>EmojiPickerView</code> (recommended but not necessary) to make further adjustments.</p>
+<pre><code class="language-dart">
+class CustomView extends EmojiPickerView {
+  CustomView(Config config, EmojiViewState state, VoidCallback showSearchBar,
+      {super.key})
+      : super(
+          config,
+          state,
+          showSearchBar,
+        );
+
+  @override
+  _CustomViewState createState() =&gt; _CustomViewState();
+}
+
+class _CustomViewState extends State&lt;CustomView&gt; {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    // Access widget.config, widget.state and widget.showSearchBar
+    return Container();
+  }
+}
+
+
+
+EmojiPicker(
+    onEmojiSelected: (category, emoji) {/* ...*/},
+    config: Config(/* ...*/),
+    customWidget: (config, state, showSearchView) =&gt; CustomView(
+        config,
+        state,
+        showSearchView,
+    ),
+)
+
+</code></pre>
+<p>Each component can also be completely customized individually:</p>
+<ul>
+<li>
+<p><code>SearchViewConfig</code> -&gt; <code>customSearchView</code></p>
+</li>
+<li>
+<p><code>CategoryViewConfig</code> -&gt; <code>customCategoryView</code></p>
+</li>
+<li>
+<p><code>BottomActionBarConfig</code> -&gt; <code>customBottomActionBar</code></p>
+</li>
+</ul>
+<h2 id="localization" class="hash-header">Localization <a href="#localization" class="hash-link">#</a></h2>
+<p>The package currently supports following languages: en, de, es, fr, hi, it, ja, pt, ru, zh.
+In order to let the EmojiPicker choose the right language you need to pass the locale to the config:</p>
+<pre><code class="language-dart">Config(
+    locale: const Locale("ja"),
+)    
+</code></pre>
+<p>In case you want to support additional languages, you need to create a copy of a emoji set file (see /lib/locales), translate it (optional use <code>/automation/create_emoji_set.sh</code> to help you) and adjust the config for <code>emojiSet</code>:</p>
+<pre><code class="language-dart">EmojiPicker(
+    config: Config(
+         emojiSet: _getEmojiLocale,
+    ),
+)
+
+List&lt;CategoryEmoji&gt; _getEmojiLocale(Locale locale) {
+  switch (locale.languageCode) {
+    case "ja":
+      return emojiSetJapanese;
+    case "de":
+      return emojiSetGerman;
+    default:
+      return emojiSetEnglish;
+  }
+}
+</code></pre>
+<p>Example for using <code>/automation/create_emoji_set.sh</code> for generating translation in terminal:</p>
+<ol>
+<li>Fork the repository and open the directory from your terminal</li>
+<li>Run command below</li>
+</ol>
+<pre><code>cd automation &amp;&amp; ./create_emoji_set.sh pt Portuguese
+</code></pre>
+<p>Feel free to create an issue if you think a specific language should be supported by default. We keep the languages limited for now to avoid the package size growing unnecesserily large.</p>
+<p>In case you want to support only a single language you can just return the same EmojiSet for all locales.</p>
+<pre><code>List&lt;CategoryEmoji&gt; _getEmojiLocale(String locale) {
+    return emojiSetEnglish;
+}
+</code></pre>
+<p>Using a single EmojiSet will reduce the package size by about 2 MB.
+If you prefer to use the old EmojiSet (version 3 and below), you can return <code>defaultEmojiSet</code>.</p>
+<h2 id="extended-usage-with-emojipickerutils" class="hash-header">Extended usage with EmojiPickerUtils <a href="#extended-usage-with-emojipickerutils" class="hash-link">#</a></h2>
+<p>Find usage example <a href="https://github.com/Fintasys/emoji_picker_flutter/blob/master/example/lib/main_key.dart" rel="ugc">here</a></p>
+<pre><code class="language-dart">
+// Get recently used emoji
+final recentEmojis = await EmojiPickerUtils().getRecentEmojis();
+
+// Search for related emoticons based on keywords
+final filterEmojiEntities = await EmojiPickerUtils().searchEmoji("face", defaultEmojiSet);
+
+// Add an emoji to recently used list or increase its counter
+final newRecentEmojis = await EmojiPickerUtils().addEmojiToRecentlyUsed(key: key, emoji: emoji);
+// Important: Needs same key instance of type GlobalKey&lt;EmojiPickerState&gt; here and for the EmojiPicker-Widget in order to work properly
+
+// Highlight emojis with custom style spans
+final textSpans = EmojiPickerUtils().setEmojiTextStyle('text', emojiStyle: style);
+
+// Clear list of recent Emojis
+EmojiPickerUtils().clearRecentEmojis(key: key);
+
+</code></pre>
+<h2 id="feel-free-to-contribute-to-this-package-" class="hash-header">Feel free to contribute to this package!! 🙇‍♂️ <a href="#feel-free-to-contribute-to-this-package-" class="hash-link">#</a></h2>
+<p>Always happy if anyone wants to help to improve this package!</p>
+<h2 id="if-you-need-any-features" class="hash-header">If you need any features <a href="#if-you-need-any-features" class="hash-link">#</a></h2>
+<p>Please open an issue so that we can discuss your feature request 🙏</p>
+<hr>
+
+</section></div></div></div><aside class="detail-info-box"><a class="packages-scores" href="/packages/emoji_picker_flutter/score"><div class="packages-score packages-score-like"><div class="packages-score-value -has-value"><span class="packages-score-value-number">588</span><span class="packages-score-value-sign"></span></div><div class="packages-score-label">likes</div></div><div class="packages-score packages-score-health"><div class="packages-score-value -has-value"><span class="packages-score-value-number">160</span><span class="packages-score-value-sign"></span></div><div class="packages-score-label">points</div></div><div class="packages-score packages-score-downloads" title="Number of downloads of this package during the past 30 days"><div class="packages-score-value -has-value"><span class="packages-score-value-number">77k</span><span class="packages-score-value-sign"></span></div><div class="packages-score-label">downloads</div></div></a><h3 class="title">Publisher</h3><p><a href="/publishers/fintasys.com"><img class="-pub-publisher-shield filter-invert-on-dark" src="/static/hash-mh7qv2oc/img/material-icon-verified.svg" alt="verified publisher" width="14" height="14" title="Published by a pub.dev verified publisher"/>fintasys.com</a></p><h3 class="title">Weekly Downloads</h3><div id="-weekly-downloads-sparkline" class="weekly-downloads-sparkline" data-widget="weekly-sparkline" data-weekly-sparkline-points="ADjnZ5FOAAAtSgAA4kQAAC5GAADESgAAJk0AAHBQAACDRwAAwkAAAKJEAABRPQAArj4AAOQtAAAuKAAAeEIAAKhHAADrOgAAnzsAALc+AADuQgAAajsAANI7AADmPAAAPToAAI89AADgOgAAYjwAAMMzAAB3PQAAjDwAAMs+AAAdNgAALjYAAHI1AAC4MAAAdTMAAMMxAABKLwAAISkAAHIqAADFKgAARS4AAOErAABtKgAAYSsAACErAADZJwAAxyUAAFcsAACkKgAANScAAAwpAAA="></div><h3 class="title pkg-infobox-metadata">Metadata</h3><p>A Flutter package that provides an Emoji picker widget with 1500+ emojis in 8 categories.</p><p><a class="link" href="https://github.com/Fintasys/emoji_picker_flutter" rel="ugc">Repository (GitHub)</a><br/><a class="link" href="https://github.com/Fintasys/emoji_picker_flutter/issues" rel="ugc">View&#47;report issues</a><br/></p><h3 class="title">Documentation</h3><p><a class="link" href="/documentation/emoji_picker_flutter/latest/">API reference</a><br/></p><h3 class="title">License</h3><p><img class="inline-icon-img filter-invert-on-dark" src="/static/hash-mh7qv2oc/img/material-icon-balance.svg" alt="" width="14" height="14" role="presentation"/>MIT (<a href="/packages/emoji_picker_flutter/license">license</a>)</p><h3 class="title">Dependencies</h3><p><a href="https://api.flutter.dev/">flutter</a>, <a href="https://api.flutter.dev/flutter/flutter_web_plugins/flutter_web_plugins-library.html">flutter_web_plugins</a>, <a href="/packages/plugin_platform_interface" title="^2.1.8">plugin_platform_interface</a>, <a href="/packages/shared_preferences" title="^2.3.3">shared_preferences</a>, <a href="/packages/universal_io" title="^2.2.2">universal_io</a>, <a href="/packages/web" title="^1.1.0">web</a></p><h3 class="title">More</h3><p><a href="/packages?q=dependency%3Aemoji_picker_flutter" rel="nofollow">Packages that depend on emoji_picker_flutter</a></p></aside></div><script type="application/ld+json">{"@context":"http\u003a\u002f\u002fschema.org","@type":"SoftwareSourceCode","name":"emoji\u005fpicker\u005fflutter","version":"4.3.0","description":"emoji\u005fpicker\u005fflutter - A Flutter package that provides an Emoji picker widget with 1500\u002b emojis in 8 categories.","url":"https\u003a\u002f\u002fpub.dev\u002fpackages\u002femoji\u005fpicker\u005fflutter","dateCreated":"2021-03-16T15\u003a59\u003a02.176969Z","dateModified":"2025-01-22T04\u003a42\u003a31.574298Z","programmingLanguage":"Dart","image":"https\u003a\u002f\u002fpub.dev\u002fstatic\u002fimg\u002fpub-dev-icon-cover-image.png","license":"https\u003a\u002f\u002fpub.dev\u002fpackages\u002femoji\u005fpicker\u005fflutter\u002flicense"}</script></div><div class="detail-metadata"><h3 class="detail-metadata-title"><span class="detail-metadata-toggle">←</span> Metadata</h3><div class="detail-info-box"><a class="packages-scores" href="/packages/emoji_picker_flutter/score"><div class="packages-score packages-score-like"><div class="packages-score-value -has-value"><span class="packages-score-value-number">588</span><span class="packages-score-value-sign"></span></div><div class="packages-score-label">likes</div></div><div class="packages-score packages-score-health"><div class="packages-score-value -has-value"><span class="packages-score-value-number">160</span><span class="packages-score-value-sign"></span></div><div class="packages-score-label">points</div></div><div class="packages-score packages-score-downloads" title="Number of downloads of this package during the past 30 days"><div class="packages-score-value -has-value"><span class="packages-score-value-number">77k</span><span class="packages-score-value-sign"></span></div><div class="packages-score-label">downloads</div></div></a><h3 class="title">Publisher</h3><p><a href="/publishers/fintasys.com"><img class="-pub-publisher-shield filter-invert-on-dark" src="/static/hash-mh7qv2oc/img/material-icon-verified.svg" alt="verified publisher" width="14" height="14" title="Published by a pub.dev verified publisher"/>fintasys.com</a></p><h3 class="title">Weekly Downloads</h3><div id="-weekly-downloads-sparkline" class="weekly-downloads-sparkline" data-widget="weekly-sparkline" data-weekly-sparkline-points="ADjnZ5FOAAAtSgAA4kQAAC5GAADESgAAJk0AAHBQAACDRwAAwkAAAKJEAABRPQAArj4AAOQtAAAuKAAAeEIAAKhHAADrOgAAnzsAALc+AADuQgAAajsAANI7AADmPAAAPToAAI89AADgOgAAYjwAAMMzAAB3PQAAjDwAAMs+AAAdNgAALjYAAHI1AAC4MAAAdTMAAMMxAABKLwAAISkAAHIqAADFKgAARS4AAOErAABtKgAAYSsAACErAADZJwAAxyUAAFcsAACkKgAANScAAAwpAAA="></div><h3 class="title pkg-infobox-metadata">Metadata</h3><p>A Flutter package that provides an Emoji picker widget with 1500+ emojis in 8 categories.</p><p><a class="link" href="https://github.com/Fintasys/emoji_picker_flutter" rel="ugc">Repository (GitHub)</a><br/><a class="link" href="https://github.com/Fintasys/emoji_picker_flutter/issues" rel="ugc">View&#47;report issues</a><br/></p><h3 class="title">Documentation</h3><p><a class="link" href="/documentation/emoji_picker_flutter/latest/">API reference</a><br/></p><h3 class="title">License</h3><p><img class="inline-icon-img filter-invert-on-dark" src="/static/hash-mh7qv2oc/img/material-icon-balance.svg" alt="" width="14" height="14" role="presentation"/>MIT (<a href="/packages/emoji_picker_flutter/license">license</a>)</p><h3 class="title">Dependencies</h3><p><a href="https://api.flutter.dev/">flutter</a>, <a href="https://api.flutter.dev/flutter/flutter_web_plugins/flutter_web_plugins-library.html">flutter_web_plugins</a>, <a href="/packages/plugin_platform_interface" title="^2.1.8">plugin_platform_interface</a>, <a href="/packages/shared_preferences" title="^2.3.3">shared_preferences</a>, <a href="/packages/universal_io" title="^2.2.2">universal_io</a>, <a href="/packages/web" title="^1.1.0">web</a></p><h3 class="title">More</h3><p><a href="/packages?q=dependency%3Aemoji_picker_flutter" rel="nofollow">Packages that depend on emoji_picker_flutter</a></p></div><p class="detail-lead-back"><a class="detail-metadata-toggle">Back</a></p></div><div id="-screenshot-carousel" class="carousel"><fab id="-carousel-prev" class="mdc-fab carousel-prev carousel-nav" data-mdc-auto-init="MDCRipple" title="Previous" data-ga-click-event="screenshot-carousel-prev-click" tabindex="0"><div class="mdc-fab__ripple"></div><img class="mdc-fab__icon" src="/static/hash-mh7qv2oc/img/keyboard_arrow_left.svg" alt="previous" width="24" height="24" aria-hidden="true"/></fab><div id="-image-container" class="image-container"></div><fab id="-carousel-next" class="mdc-fab carousel-next carousel-nav" data-mdc-auto-init="MDCRipple" title="Next" data-ga-click-event="screenshot-carousel-next-click" tabindex="0"><div class="mdc-fab__ripple"></div><img class="mdc-fab__icon" src="/static/hash-mh7qv2oc/img/keyboard_arrow_right.svg" alt="next" width="24" height="24" aria-hidden="true"/></fab><p id="-screenshot-description" class="screenshot-description"></p></div></main><footer class="site-footer"><a class="link" href="https://dart.dev/">Dart language</a><a class="link sep" href="/report?subject=package%3Aemoji_picker_flutter&amp;url=https%3A%2F%2Fpub.dev%2Fpackages%2Femoji_picker_flutter">Report package</a><a class="link sep" href="/policy">Policy</a><a class="link sep" href="https://www.google.com/intl/en/policies/terms/">Terms</a><a class="link sep" href="https://developers.google.com/terms/">API Terms</a><a class="link sep" href="/security">Security</a><a class="link sep" href="https://www.google.com/intl/en/policies/privacy/">Privacy</a><a class="link sep" href="/help">Help</a><a class="link icon sep" href="/feed.atom"><img class="inline-icon" src="/static/hash-mh7qv2oc/img/rss-feed-icon.svg" alt="RSS" width="20" height="20" title="RSS/atom feed"/></a><a class="link icon github_issue" href="https://github.com/dart-lang/pub-dev/issues/new"><img class="inline-icon" src="/static/hash-mh7qv2oc/img/bug-report-white-96px.png" alt="bug report" width="20" height="20" title="Report an issue with this site"/></a></footer><script src="/static/hash-mh7qv2oc/highlight/highlight-with-init.js" defer="defer"></script></body></html>

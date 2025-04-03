@@ -8,7 +8,8 @@ app = Flask(__name__)
 async def index():
     # return render_template('index.html')
     # return render_template('index2.html')
-    return render_template('index4.html')
+    # return render_template('index4.html')
+    return render_template('flutter_page.html')
 
 @app.get('/test_data')
 async def test_data():
@@ -16,7 +17,7 @@ async def test_data():
     #     return f.read()
     # with open('test_data2.json') as f:
     #     return f.read()
-    with open('test_data3.json') as f:
+    with open('test_data_flutter.json') as f:
         return f.read()
 
 @app.get('/external_link_old')
