@@ -67,20 +67,22 @@ const SeoAutomationScript = {
     console.warn('[SeoAutomationScript] Error:', text);
   },
   
-  fetchSuggestions(url) {
+  fetchSuggestions(_) {
     let element = document.getElementById('seo_automator')
     let website_id = element.getAttribute('data-website-id')
-    let app_version = element.getAttribute('data-app-version') || "test"
+    let app_version = element.getAttribute('data-app-version')
+    let path = window.location.href;
 
-    let header_value = "test_base";
-    if (app_version === "prod") {
-      header_value = "live";
+    let header_value = "live";
+    let url = `https://xano.rankauthority.com/api:ZnCZv4aQ/content_recommendations?status=true&website_id=${website_id}&page_id=${path}`;
+    if (app_version === "test") {
+      header_value = "test";
+      url = `https://xano.rankauthority.com/api:ZnCZv4aQ:v1/content_recommendations?status=true&website_id=${website_id}&page_id=${path}`;
     }
 
-    let path = window.location.pathname;
     fetch(
       // `http://127.0.0.1:6785/test_data`,
-      `https://xano.rankauthority.com/api:ZnCZv4aQ/content_recommendations?status=true&website_id=${website_id}&app_version=${app_version}&page_id=${path}`,
+      url,
       {
         method: "GET",
         headers: {
@@ -97,8 +99,6 @@ const SeoAutomationScript = {
         const json = JSON.parse(cleanedText);
 
         this.processSuggestions.bind(this)(json)
-        var cssSection = document.getElementById('helper');
-        document.head.removeChild(cssSection);
       })
       .catch(this.showError);
   },
@@ -111,7 +111,7 @@ const SeoAutomationScript = {
         return;
       };
 
-      if (type === "keyword" || type === "content") {
+      if (["keyword", "metatag", "content"].indexOf(type) >= 0) {
         this.processContent(
           selector, 
           old, 
@@ -136,8 +136,8 @@ const SeoAutomationScript = {
           data.force_set
         )
       } else {
-        console.error(
-          `Wrong type of data: ${data}`
+        console.warn(
+          `Wrong type (${type}) of data: ${data}`
         );
       }
     }
