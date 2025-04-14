@@ -74,10 +74,10 @@ const SeoAutomationScript = {
     let path = window.location.href;
 
     let header_value = "live";
-    let url = `https://xano.rankauthority.com/api:ZnCZv4aQ/content_recommendations?status=true&website_id=${website_id}&page_id=${path}`;
+    let url = `https://xano.rankauthority.com/api:cHcCrEXd:v1/snippet_content_recommendations?website_id=${website_id}&page_id=${path}`;
     if (app_version === "test") {
       header_value = "test";
-      url = `https://xano.rankauthority.com/api:ZnCZv4aQ:v1/content_recommendations?status=true&website_id=${website_id}&page_id=${path}`;
+      url = `https://xano.rankauthority.com/api:cHcCrEXd:v1/snippet_content_recommendations?website_id=${website_id}&page_id=${path}`;
     }
 
     fetch(
@@ -85,9 +85,7 @@ const SeoAutomationScript = {
       url,
       {
         method: "GET",
-        headers: {
-          "X-Data-Source": header_value,
-        },
+        headers: { "X-Data-Source" : header_value}
       }
     )
       .then(function (response) {
@@ -111,35 +109,40 @@ const SeoAutomationScript = {
         return;
       };
 
-      if (["keyword", "metatag", "content"].indexOf(type) >= 0) {
-        this.processContent(
-          selector, 
-          old, 
-          _new, 
-          ignore_case, 
-          data.force_set,
-          data.attribute_to_update,
-          type === "content" ? new_selector : null
-        );
-      } else if (type === "image") {
-        this.processImageAlt(
-          selector, 
-          old,
-          _new
-        );
-      } else if (type === "internal_link" || type === "external_link") {
-        this.processLinks(
-          selector,
-          old,
-          _new,
-          type === "internal_link" ? true : false,
-          data.force_set
-        )
-      } else {
-        console.warn(
-          `Wrong type (${type}) of data: ${data}`
-        );
-      }
+      try {
+        if (["keyword", "metatag", "content"].indexOf(type) >= 0) {
+          this.processContent(
+            selector, 
+            old, 
+            _new, 
+            ignore_case, 
+            data.force_set,
+            data.attribute_to_update,
+            type === "content" ? new_selector : null
+          );
+        } else if (type === "image") {
+          this.processImageAlt(
+            selector, 
+            old,
+            _new
+          );
+        } else if (type === "internal_link" || type === "external_link") {
+          this.processLinks(
+            selector,
+            old,
+            _new,
+            type === "internal_link" ? true : false,
+            data.force_set
+          )
+        } else {
+          console.warn(
+            `Wrong type (${type}) of data: ${data}`
+          );
+        }
+      } catch (e) {
+        this.showError(e)
+      } 
+
     }
 
     data.map((i) => {processSuggestion(i)});
@@ -274,7 +277,7 @@ const SeoAutomationScript = {
         NodeFilter.SHOW_ALL,
         {
             acceptNode: function(node) {
-              if (node.hasAttribute(attributeName)) {
+              if (node.hasAttribute && node.hasAttribute(attributeToUpdate)) {
                   return NodeFilter.FILTER_ACCEPT; 
               }
               return NodeFilter.FILTER_SKIP;
@@ -316,18 +319,22 @@ const SeoAutomationScript = {
 
       if (attributeToUpdate) {
         var value = currentNode.getAttribute(attributeToUpdate);
-        if (!keyword || this.isCompleteWordOrPhrase(value, keyword)) {
-          var replacement;
-          if (forceSet) {
-            replacement = newText;
-          } else {
-            let flags = ignoreCase ? 'gi' : 'g';
-            let pattern = new RegExp(keyword, flags);
-            replacement = value.replaceAll(pattern, newText)
-          }
-          if (currentNode.setAttribute) {
-            
-            currentNode.setAttribute(attributeToUpdate, replacement)
+        if (value == null) {
+          this.replaceTextNodeOnly(currentNode, keyword, newText, true, ignoreCase);
+        } else {
+          if (!keyword || this.isCompleteWordOrPhrase(value, keyword)) {
+            var replacement;
+            if (forceSet) {
+              replacement = newText;
+            } else {
+              let flags = ignoreCase ? 'gi' : 'g';
+              let pattern = new RegExp(keyword, flags);
+              replacement = value.replaceAll(pattern, newText)
+            }
+            if (currentNode.setAttribute) {
+              
+              currentNode.setAttribute(attributeToUpdate, replacement)
+            }
           }
         }
 
