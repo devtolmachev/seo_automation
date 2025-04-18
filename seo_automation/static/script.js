@@ -132,6 +132,7 @@ const SeoAutomationScript = {
             data.force_set,
             data.attribute_to_update,
             type === "content" ? new_selector : null,
+            data.replaceInnerHTML,
           );
         } else if (type === "image") {
           this.processImageAlt(selector, old, _new);
@@ -165,6 +166,7 @@ const SeoAutomationScript = {
     forceReplaceContent,
     attributeToUpdate,
     new_selector,
+    replaceInnerHTML,
   ) {
     var alreadyReplaced = new Set();
     const updateElement = (element) => {
@@ -177,6 +179,7 @@ const SeoAutomationScript = {
         alreadyReplaced,
         true,
         attributeToUpdate,
+        replaceInnerHTML,
       );
       if (new_selector) {
         this.moveElement(element, new_selector);
@@ -261,6 +264,7 @@ const SeoAutomationScript = {
     alreadyReplaced,
     forceSet,
     attributeToUpdate,
+    replaceInnerHTML,
   ) {
     var walker;
     if (!attributeToUpdate || attributeToUpdate === "TEXT") {
@@ -345,6 +349,17 @@ const SeoAutomationScript = {
         continue;
       }
 
+      if (replaceInnerHTML) {
+        this.replaceTextNodeOnly(
+          currentNode,
+          keyword,
+          newText,
+          true,
+          ignoreCase,
+          replaceInnerHTML,
+        );
+      }
+
       if (forceSet && !attributeToUpdate) {
         this.replaceTextNodeOnly(
           currentNode,
@@ -352,10 +367,11 @@ const SeoAutomationScript = {
           newText,
           true,
           ignoreCase,
+          replaceInnerHTML,
         );
       }
 
-      if (attributeToUpdate) {
+      if (!replaceInnerHTML && attributeToUpdate) {
         var value = currentNode.getAttribute(attributeToUpdate);
         if (value == null) {
           this.replaceTextNodeOnly(
@@ -400,6 +416,7 @@ const SeoAutomationScript = {
               newText,
               false,
               ignoreCase,
+              replaceInnerHTML,
             );
           }
         }
@@ -409,11 +426,20 @@ const SeoAutomationScript = {
     }
   },
 
-  replaceTextNodeOnly(element, oldText, newText, forceSet, ignoreCase) {
+  replaceTextNodeOnly(
+    element,
+    oldText,
+    newText,
+    forceSet,
+    ignoreCase,
+    replaceInnerHTML,
+  ) {
     const childNodes = Array.from(element.childNodes);
 
     if (!childNodes || childNodes.length === 0) {
-      if (forceSet) {
+      if (replaceInnerHTML) {
+        element.innerHTML = newText;
+      } else if (forceSet) {
         element.textContent = newText;
       } else {
         let flags = ignoreCase ? "gi" : "g";
@@ -423,7 +449,9 @@ const SeoAutomationScript = {
     }
 
     childNodes.forEach((node) => {
-      if (node.nodeType === Node.TEXT_NODE) {
+      if (replaceInnerHTML) {
+        element.innerHTML = newText;
+      } else if (node.nodeType === Node.TEXT_NODE) {
         if (node.textContent.includes(oldText)) {
           let flags = ignoreCase ? "gi" : "g";
           let pattern = new RegExp(oldText, flags);

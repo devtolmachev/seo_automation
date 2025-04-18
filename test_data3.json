@@ -4,86 +4,10 @@
         "id": "1a2b3c4d5e",
         "id_page": "http://example.com/page1",
         "status": true,
-        "type": "keyword",
-        "selector": null,
-        "old": "looki",
-        "new": "[selector=null, ignore_case=true, type=keyword] NoCodeGdn",
-        "ignore_case": true
-    },
-    {
-        "id": "3c4d5e6f7g",
-        "id_page": "http://example.com/page3",
-        "status": true,
-        "type": "keyword",
-        "selector": "meta[name=\"description\"]",
-        "attribute_to_update": "content",
-        "new": "[force_set=true, attribute_to_update=content] NoCodeGdn Description",
-        "force_set": true
-    },
-    {
-        "id": "3c4d5e6f7g",
-        "id_page": "http://example.com/page3",
-        "status": true,
-        "type": "keyword",
-        "selector": "#product_form_7056112156831 > div.sc-iJKOTD.qriss.pf-12_.pf-r.pf-r-eh > div > div > div.sc-jftFmt.fTEqNE.pf-17_ > div.sc-fmWebE.bMUtao.pf-18_",
-        "new": "[force_set=true] 15.000.000$",
-        "force_set":true
-    },
-
-    {
-        "id": "4d5e6f7g8h",
-        "id_page": "http://example.com/page4",
-        "status": true,
         "type": "content",
-        "selector": "#__pf > div > div > div.sc-eFegNN.kRTGhu.pf-127_ > div > div.sc-iJKOTD.qriss.pf-137_.pf-r.pf-r-eh > div:nth-child(3) > div > div.sc-xiLah.hBpxAH.pf-166_ > h3 > span",
-        "new": "[UPDATED CONTENT BY SCRIPT. force_set=true] Langdurig gebruik en duurzaam",
-        "force_set": true
-    },
-    {
-        "id": "6f7g8h9i0j",
-        "id_page": "http://example.com/page6",
-        "status": true,
-        "type": "content",
-        "selector": "#__pf > div > div > div.sc-eFegNN.kRTGhu.pf-127_ > div > div.sc-iJKOTD.qriss.pf-137_.pf-r.pf-r-eh > div:nth-child(1) > div > div.sc-xiLah.hBpxAH.pf-139_ > h3 > span",
-        "old": "efficiënt met je tijd omgaan",
-        "new": "[UPDATED TEXT BY SCRIPT ignore_case=false] updated.",
-        "ignore_case": false
-    },
-
-
-    {
-        "id": "1k2l3m4n5o",
-        "id_page": "http://example.com/page11",
-        "status": true,
-        "type": "external_link",
-        "old": "https://api.whatsapp.com/send?phone=31641779590",
-        "new": "https://cs12.pikabu.ru/post_img/2022/10/07/7/1665139478142178855.jpg"
-    },
-    {
-        "id": "0j1k2l3m4n",
-        "id_page": "http://example.com/page10",
-        "status": true,
-        "type": "external_link",
-        "selector": "#shopify-section-theme-footer > div.footer.footer-style1 > div.footer-maincontent > div > div > div:nth-child(1) > div > div.social-icons > div > div:nth-child(1) > a",
-        "new": "https://www.youtube.com/"
-    },
-
-    {
-        "id": "1k2l3m4n5o",
-        "id_page": "http://example.com/page11",
-        "status": true,
-        "type": "internal_link",
-        "selector": null,
-        "old": "/collections/security",
-        "new": "/security-updated-link[selector=null,old=/collections/security]"
-    },
-    {
-        "id": "2l3m4n5o6p",
-        "id_page": "http://example.com/page12",
-        "status": true,
-        "type": "internal_link",
-        "selector": "#shopify-section-theme-header5 > div.desktop-header.show-for-large.sticky > div.grid-container > div > div > div.cell.small-12.medium-4.large-6.xlarge-6.xxlarge-7.xxxlarge-7 > div > div > ul > li:nth-child(1) > a",
-        "new": "/shop-updated-link[force_set=true,selector!=null]",
-        "force_set": true
+        "selector": "#i1316896d8c9cd78a4b7e_dvozguvcwbblffzquwkkbagiucmhnshjgabt > div > div.brz-container.brz-css-gk5rh7.brz-css-1lazauk > div:nth-child(1) > div > div > h1 > span",
+        "new": "<a href='/test-link' id='976976'>Новая ссылка внутри</a>",
+        "ignore_case": true,
+        "replaceInnerHTML": true
     }
 ]
