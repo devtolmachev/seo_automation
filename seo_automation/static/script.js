@@ -3,20 +3,6 @@ const SeoAutomationScript = {
     if (window.loadedSeoAutomationScript) return;
     window.loadedSeoAutomationScript = true;
 
-    let cssSection = document.createElement("style");
-    cssSection.setAttribute("id", "helper");
-    const css = `
-      .hidden-dom-element {
-        display: none
-      }
-      .visible {
-        display: block;
-      }
-    `;
-    // cssSection.appendChild(document.createTextNode(css));
-    // document.body.classList.add('hidden-dom-element');
-    // document.head.appendChild(cssSection);
-
     const currentPageUrl = this.cleanUrl(window.location.href);
     this.fetchSuggestions(currentPageUrl);
     window.loadedSeoAutomationScript = false;
@@ -81,7 +67,6 @@ const SeoAutomationScript = {
     }
 
     fetch(
-      // `http://127.0.0.1:6785/test_data`,
       url,
       {
         method: "GET",
@@ -189,7 +174,14 @@ const SeoAutomationScript = {
     if (!selector) {
       selector = "*";
     }
-    const element = document.querySelectorAll(selector);
+    var element = document.querySelectorAll(selector);
+    if (element.length == 0) {
+      if (!selector) {
+        selector = "*";
+      }
+      element = document.querySelectorAll(selector);
+    }
+
     element.forEach(updateElement);
   },
 
@@ -251,7 +243,14 @@ const SeoAutomationScript = {
     if (!selector) {
       selector = "[href]";
     }
-    const elements = document.querySelectorAll(selector);
+    var elements = document.querySelectorAll(selector)
+    if (elements.length == 0) {
+      if (!selector) {
+        selector = "[href]";
+      }
+      elements = document.querySelectorAll(selector);
+    }
+    
     elements.forEach(updateElement);
   },
 
