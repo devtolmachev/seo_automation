@@ -181,8 +181,14 @@ const SeoAutomationScript = {
       }
       element = document.querySelectorAll(selector);
     }
-
-    element.forEach(updateElement);
+    if (element.length === 0 && selector != null && selector.split('head').length > 1) {
+      var key = `${attributeToUpdate}`;
+      var attributesToSet = new Map();
+      attributesToSet[key] = new_data;
+      this.createMetaTag(selector, new_data, attributesToSet);
+    } else {
+      element.forEach(updateElement);
+    }
   },
 
   moveElement(element, newSelector) {
@@ -250,8 +256,64 @@ const SeoAutomationScript = {
       }
       elements = document.querySelectorAll(selector);
     }
-    
+
     elements.forEach(updateElement);
+  },
+
+  createMetaTag(selector, data, attributesToSet) {
+    const normalizedSelector = selector.trim().replace(/,\s*$/, '').replace(/\s+/g, ' ');
+
+    const parts = normalizedSelector.split('>').map(part => part.trim());
+
+    if (parts.length < 1) {
+      console.error(`Некорректный селектор: "${selector}"`);
+      return null;
+    }
+
+    const lastPart = parts[parts.length - 1];
+
+    const tagMatch = lastPart.match(/^([a-zA-Z0-9-]+)(\[.*\])?$/);
+    if (!tagMatch) {
+      console.error(`Некорректный формат элемента в селекторе: "${lastPart}"`);
+      return null;
+    }
+
+    const elementToCreate = tagMatch[1];
+
+    const parentSelector = parts.slice(0, -1).join('>').trim() || 'html > head';
+
+    const parentElement = document.querySelector(parentSelector);
+
+    if (!parentElement) {
+      console.error(`Родительский элемент по селектору "${parentSelector}" не найден`);
+      return null;
+    }
+
+    const newElement = document.createElement(elementToCreate);
+
+    if (attributesToSet instanceof Map) {
+      for (const [key, value] of attributesToSet) {
+        if (key != undefined && value != undefined) {
+          newElement.setAttribute(key, value);
+        }
+      }
+    }
+
+    if (tagMatch[2]) {
+      const attrMatch = tagMatch[2].match(/\[([^=]+)="([^"]+)"\]/);
+      if (attrMatch) {
+        const attrName = attrMatch[1];
+        const attrValue = attrMatch[2];
+        if (!attributesToSet.has(attrName)) {
+          newElement.setAttribute(attrName, attrValue);
+          newElement.setAttribute("content", data);
+        }
+      }
+    }
+
+    parentElement.appendChild(newElement);
+
+    return newElement;
   },
 
   replaceText(
@@ -330,18 +392,19 @@ const SeoAutomationScript = {
 
       regex = isAsian
         ? new RegExp(
-            `(?<=[\\p{IsHan}\\p{IsBopo}\\p{IsHira}\\p{IsKatakana}]?)${escapedPlainTextPhrase}[\\.{!\\?}(|\\]\\\\]?(?![a-zA-Z])(?=[\\)\\/]?)`,
-            ignoreCase ? "i" : "",
-          )
+          `(?<=[\\p{IsHan}\\p{IsBopo}\\p{IsHira}\\p{IsKatakana}]?)${escapedPlainTextPhrase}[\\.{!\\?}(|\\]\\\\]?(?![a-zA-Z])(?=[\\)\\/]?)`,
+          ignoreCase ? "i" : "",
+        )
         : new RegExp(
-            `(?<=^|\\s|[([{<"'В«вЂ№вЂћ"'|/]|\\-|:|'|'|')` +
-              `${escapedPlainTextPhrase}` +
-              `(?=$|\\s|[)\\]}>"'В»вЂє"'|/]|\\-|[.,:;!?]|'|'|')`,
-            ignoreCase ? "gi" : "g",
-          );
+          `(?<=^|\\s|[([{<"'В«вЂ№вЂћ"'|/]|\\-|:|'|'|')` +
+          `${escapedPlainTextPhrase}` +
+          `(?=$|\\s|[)\\]}>"'В»вЂє"'|/]|\\-|[.,:;!?]|'|'|')`,
+          ignoreCase ? "gi" : "g",
+        );
     }
 
     var currentNode = walker.currentNode;
+    var foundElements = [];
     while (currentNode) {
       if (currentNode === document.documentElement) {
         currentNode = walker.nextNode();
@@ -349,7 +412,7 @@ const SeoAutomationScript = {
       }
 
       if (replaceInnerHTML) {
-        this.replaceTextNodeOnly(
+        var element = this.replaceTextNodeOnly(
           currentNode,
           keyword,
           newText,
@@ -357,10 +420,11 @@ const SeoAutomationScript = {
           ignoreCase,
           replaceInnerHTML,
         );
+        foundElements.push(...element);
       }
 
       if (forceSet && !attributeToUpdate) {
-        this.replaceTextNodeOnly(
+        var element = this.replaceTextNodeOnly(
           currentNode,
           keyword,
           newText,
@@ -368,18 +432,20 @@ const SeoAutomationScript = {
           ignoreCase,
           replaceInnerHTML,
         );
+        foundElements.push(...element);
       }
 
       if (!replaceInnerHTML && attributeToUpdate) {
         var value = currentNode.getAttribute(attributeToUpdate);
         if (value == null) {
-          this.replaceTextNodeOnly(
+          var element = this.replaceTextNodeOnly(
             currentNode,
             keyword,
             newText,
             true,
             ignoreCase,
           );
+          foundElements.push(...element);
         } else {
           if (!keyword || this.isCompleteWordOrPhrase(value, keyword)) {
             var replacement;
@@ -392,6 +458,7 @@ const SeoAutomationScript = {
             }
             if (currentNode.setAttribute) {
               currentNode.setAttribute(attributeToUpdate, replacement);
+              foundElements.push(currentNode);
             }
           }
         }
@@ -409,7 +476,7 @@ const SeoAutomationScript = {
 
         if (anchorIndex !== -1) {
           if (this.isCompleteWordOrPhrase(matchedText, keyword)) {
-            this.replaceTextNodeOnly(
+            var element = this.replaceTextNodeOnly(
               currentNode,
               keyword,
               newText,
@@ -417,12 +484,14 @@ const SeoAutomationScript = {
               ignoreCase,
               replaceInnerHTML,
             );
+            foundElements.push(...element);
           }
         }
       }
 
       currentNode = walker.nextNode();
     }
+    return foundElements;
   },
 
   replaceTextNodeOnly(
@@ -434,22 +503,25 @@ const SeoAutomationScript = {
     replaceInnerHTML,
   ) {
     const childNodes = Array.from(element.childNodes);
-
+    var foundElements = [];
     if (!childNodes || childNodes.length === 0) {
       if (replaceInnerHTML) {
         element.innerHTML = newText;
+        foundElements.push(element);
       } else if (forceSet) {
         element.textContent = newText;
+        foundElements.push(element);
       } else {
         let flags = ignoreCase ? "gi" : "g";
         let pattern = new RegExp(oldText, flags);
         element.textContent = element.textContent.replaceAll(pattern, newText);
+        foundElements.push(element);
       }
     }
-
     childNodes.forEach((node) => {
       if (replaceInnerHTML) {
         element.innerHTML = newText;
+        foundElements.push(element);
       } else if (node.nodeType === Node.TEXT_NODE) {
         if (node.textContent.includes(oldText)) {
           let flags = ignoreCase ? "gi" : "g";
@@ -459,9 +531,11 @@ const SeoAutomationScript = {
             node.textContent.replaceAll(pattern, newText),
           );
           element.replaceChild(newTextNode, node);
+          foundElements.push(element);
         }
       }
     });
+    return foundElements;
   },
 
   isCompleteWordOrPhrase(matchedText, keyword) {

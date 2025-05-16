@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.get('/how-it-works')
 async def index():
     # return render_template('index.html')
-    # return render_template('index2.html')
+    return render_template('index2.html')
     return render_template('index4.html')
     # return render_template('flutter_page.html')
 

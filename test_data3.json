@@ -9,5 +9,13 @@
         "new": "<a href='/test-link' id='976976'>Новая ссылка внутри</a>",
         "ignore_case": true,
         "replaceInnerHTML": true
+    },
+    {
+        "id": "1a2b3c4d5ehgvjgjg",
+        "id_page": "http://example.com/page2",
+        "status": true,
+        "type": "metatag",
+        "selector": "html > head > meta[property=\"og:description\"]",
+        "new": "Get in touch with Rank Authority for expert SEO services, support for our tools, or any inquiries. Contact us today for prompt assistance and to boost your online presence"
     }
 ]
