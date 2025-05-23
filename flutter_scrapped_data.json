@@ -1,0 +1,2065 @@
+{
+  "ok": true,
+  "result": {
+    "title": "emoji_picker_flutter | Flutter package",
+    "description": "A Flutter package that provides an Emoji picker widget with 1500+ emojis in 8 categories.",
+    "metatags": [
+      {
+        "selector": "html head meta:nth-of-type(2)[http-equiv=\"x-ua-compatible\"]",
+        "content": "ie=edge"
+      },
+      {
+        "selector": "html head meta:nth-of-type(2)[content=\"ie=edge\"]",
+        "content": "ie=edge"
+      },
+      {
+        "selector": "html head meta:nth-of-type(3)[name=\"viewport\"]",
+        "content": "width=device-width, initial-scale=1"
+      },
+      {
+        "selector": "html head meta:nth-of-type(3)[content=\"width=device-width, initial-scale=1\"]",
+        "content": "width=device-width, initial-scale=1"
+      },
+      {
+        "selector": "html head meta:nth-of-type(4)[name=\"twitter:card\"]",
+        "content": "summary"
+      },
+      {
+        "selector": "html head meta:nth-of-type(4)[content=\"summary\"]",
+        "content": "summary"
+      },
+      {
+        "selector": "html head meta:nth-of-type(5)[name=\"twitter:site\"]",
+        "content": "@dart_lang"
+      },
+      {
+        "selector": "html head meta:nth-of-type(5)[content=\"@dart_lang\"]",
+        "content": "@dart_lang"
+      },
+      {
+        "selector": "html head meta:nth-of-type(6)[name=\"twitter:description\"]",
+        "content": "A Flutter package that provides an Emoji picker widget with 1500+ emojis in 8 categories."
+      },
+      {
+        "selector": "html head meta:nth-of-type(6)[content=\"A Flutter package that provides an Emoji picker widget with 1500+ emojis in 8 categories.\"]",
+        "content": "A Flutter package that provides an Emoji picker widget with 1500+ emojis in 8 categories."
+      },
+      {
+        "selector": "html head meta:nth-of-type(7)[name=\"twitter:image\"]",
+        "content": "https://pub.dev/static/hash-mh7qv2oc/img/pub-dev-icon-cover-image.png"
+      },
+      {
+        "selector": "html head meta:nth-of-type(7)[content=\"https://pub.dev/static/hash-mh7qv2oc/img/pub-dev-icon-cover-image.png\"]",
+        "content": "https://pub.dev/static/hash-mh7qv2oc/img/pub-dev-icon-cover-image.png"
+      },
+      {
+        "selector": "html head meta:nth-of-type(8)[property=\"og:type\"]",
+        "content": "website"
+      },
+      {
+        "selector": "html head meta:nth-of-type(8)[content=\"website\"]",
+        "content": "website"
+      },
+      {
+        "selector": "html head meta:nth-of-type(9)[property=\"og:site_name\"]",
+        "content": "Dart packages"
+      },
+      {
+        "selector": "html head meta:nth-of-type(9)[content=\"Dart packages\"]",
+        "content": "Dart packages"
+      },
+      {
+        "selector": "html head meta:nth-of-type(10)[property=\"og:title\"]",
+        "content": "emoji_picker_flutter | Flutter package"
+      },
+      {
+        "selector": "html head meta:nth-of-type(10)[content=\"emoji_picker_flutter | Flutter package\"]",
+        "content": "emoji_picker_flutter | Flutter package"
+      },
+      {
+        "selector": "html head meta:nth-of-type(11)[property=\"og:description\"]",
+        "content": "A Flutter package that provides an Emoji picker widget with 1500+ emojis in 8 categories."
+      },
+      {
+        "selector": "html head meta:nth-of-type(11)[content=\"A Flutter package that provides an Emoji picker widget with 1500+ emojis in 8 categories.\"]",
+        "content": "A Flutter package that provides an Emoji picker widget with 1500+ emojis in 8 categories."
+      },
+      {
+        "selector": "html head meta:nth-of-type(12)[property=\"og:image\"]",
+        "content": "https://pub.dev/static/hash-mh7qv2oc/img/pub-dev-icon-cover-image.png"
+      },
+      {
+        "selector": "html head meta:nth-of-type(12)[content=\"https://pub.dev/static/hash-mh7qv2oc/img/pub-dev-icon-cover-image.png\"]",
+        "content": "https://pub.dev/static/hash-mh7qv2oc/img/pub-dev-icon-cover-image.png"
+      },
+      {
+        "selector": "html head meta:nth-of-type(13)[property=\"og:url\"]",
+        "content": "https://pub.dev/packages/emoji_picker_flutter"
+      },
+      {
+        "selector": "html head meta:nth-of-type(13)[content=\"https://pub.dev/packages/emoji_picker_flutter\"]",
+        "content": "https://pub.dev/packages/emoji_picker_flutter"
+      },
+      {
+        "selector": "html head meta:nth-of-type(16)[name=\"description\"]",
+        "content": "A Flutter package that provides an Emoji picker widget with 1500+ emojis in 8 categories."
+      },
+      {
+        "selector": "html head meta:nth-of-type(16)[content=\"A Flutter package that provides an Emoji picker widget with 1500+ emojis in 8 categories.\"]",
+        "content": "A Flutter package that provides an Emoji picker widget with 1500+ emojis in 8 categories."
+      },
+      {
+        "selector": "html head meta:nth-of-type(17)[name=\"pub-page-data\"]",
+        "content": "eyJwa2dEYXRhIjp7InBhY2thZ2UiOiJlbW9qaV9waWNrZXJfZmx1dHRlciIsInZlcnNpb24iOiI0LjMuMCIsImxpa2VzIjo1ODgsInB1Ymxpc2hlcklkIjoiZmludGFzeXMuY29tIiwiaXNEaXNjb250aW51ZWQiOmZhbHNlLCJpc0xhdGVzdCI6dHJ1ZX0sInNlc3Npb25Bd2FyZSI6ZmFsc2V9"
+      },
+      {
+        "selector": "html head meta:nth-of-type(17)[content=\"eyJwa2dEYXRhIjp7InBhY2thZ2UiOiJlbW9qaV9waWNrZXJfZmx1dHRlciIsInZlcnNpb24iOiI0LjMuMCIsImxpa2VzIjo1ODgsInB1Ymxpc2hlcklkIjoiZmludGFzeXMuY29tIiwiaXNEaXNjb250aW51ZWQiOmZhbHNlLCJpc0xhdGVzdCI6dHJ1ZX0sInNlc3Npb25Bd2FyZSI6ZmFsc2V9\"]",
+        "content": "eyJwa2dEYXRhIjp7InBhY2thZ2UiOiJlbW9qaV9waWNrZXJfZmx1dHRlciIsInZlcnNpb24iOiI0LjMuMCIsImxpa2VzIjo1ODgsInB1Ymxpc2hlcklkIjoiZmludGFzeXMuY29tIiwiaXNEaXNjb250aW51ZWQiOmZhbHNlLCJpc0xhdGVzdCI6dHJ1ZX0sInNlc3Npb25Bd2FyZSI6ZmFsc2V9"
+      }
+    ],
+    "images": [
+      {
+        "selector": "html body.light-theme div.site-header a.logo img.site-logo",
+        "alt": "",
+        "src": "/static/hash-mh7qv2oc/img/pub-dev-logo.svg"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container-mobile.foldable:nth-of-type(3) h3.foldable-button img.foldable-icon",
+        "alt": "toggle folding of the section",
+        "src": "/static/hash-mh7qv2oc/img/nav-mobile-foldable-icon.svg"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container-mobile.foldable:nth-of-type(4) h3.foldable-button img.foldable-icon",
+        "alt": "toggle folding of the section",
+        "src": "/static/hash-mh7qv2oc/img/nav-mobile-foldable-icon.svg"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container-mobile.foldable:nth-of-type(5) h3.foldable-button img.foldable-icon",
+        "alt": "toggle folding of the section",
+        "src": "/static/hash-mh7qv2oc/img/nav-mobile-foldable-icon.svg"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-header.-is-loose div.detail-container div.detail-header-outer-block div.detail-header-content-block h1.title.pub-monochrome-icon-hoverable span.pkg-page-title-copy img.pub-monochrome-icon.pkg-page-title-copy-icon.filter-invert-on-dark",
+        "alt": "copy \"emoji_picker_flutter: ^4.3.0\" to clipboard",
+        "src": "/static/hash-mh7qv2oc/img/content-copy-icon.svg"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-header.-is-loose div.detail-container div.detail-header-outer-block div.detail-header-content-block div.metadata a.-pub-publisher img.-pub-publisher-shield.filter-invert-on-dark",
+        "alt": "verified publisher",
+        "src": "/static/hash-mh7qv2oc/img/material-icon-verified.svg"
+      },
+      {
+        "selector": "button#-pub-like-icon-button img.mdc-icon-button__icon",
+        "alt": "liked status: inactive",
+        "src": "/static/hash-mh7qv2oc/img/like-inactive.svg"
+      },
+      {
+        "selector": "button#-pub-like-icon-button img.mdc-icon-button__icon.mdc-icon-button__icon--on:nth-of-type(2)",
+        "alt": "liked status: active",
+        "src": "/static/hash-mh7qv2oc/img/like-active.svg"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p a img",
+        "alt": "platform flutter",
+        "src": "https://img.shields.io/badge/platform-flutter-blue.svg"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p a:nth-of-type(2) img",
+        "alt": "build",
+        "src": "https://github.com/fintasys/emoji_picker_flutter/workflows/emoji_picker_flutter/badge.svg"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p a:nth-of-type(3) img",
+        "alt": "Star on Github",
+        "src": "https://img.shields.io/github/stars/fintasys/emoji_picker_flutter.svg?style=flat&logo=github&colorB=deeppink&label=stars"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p a:nth-of-type(4) img",
+        "alt": "License: BSD-2-Clause",
+        "src": "https://img.shields.io/badge/License-BSD%202--Clause-orange.svg"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p:nth-of-type(3) a img",
+        "alt": "\"Buy Me A Coffee\"",
+        "src": "https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box p a img.-pub-publisher-shield.filter-invert-on-dark",
+        "alt": "verified publisher",
+        "src": "/static/hash-mh7qv2oc/img/material-icon-verified.svg"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box p:nth-of-type(5) img.inline-icon-img.filter-invert-on-dark",
+        "alt": "",
+        "src": "/static/hash-mh7qv2oc/img/material-icon-balance.svg"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box p a img.-pub-publisher-shield.filter-invert-on-dark",
+        "alt": "verified publisher",
+        "src": "/static/hash-mh7qv2oc/img/material-icon-verified.svg"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box p:nth-of-type(5) img.inline-icon-img.filter-invert-on-dark",
+        "alt": "",
+        "src": "/static/hash-mh7qv2oc/img/material-icon-balance.svg"
+      },
+      {
+        "selector": "fab#-carousel-prev img.mdc-fab__icon",
+        "alt": "previous",
+        "src": "/static/hash-mh7qv2oc/img/keyboard_arrow_left.svg"
+      },
+      {
+        "selector": "fab#-carousel-next img.mdc-fab__icon",
+        "alt": "next",
+        "src": "/static/hash-mh7qv2oc/img/keyboard_arrow_right.svg"
+      },
+      {
+        "selector": "html body.light-theme footer.site-footer a.link.icon.sep:nth-of-type(9) img.inline-icon",
+        "alt": "RSS",
+        "src": "/static/hash-mh7qv2oc/img/rss-feed-icon.svg"
+      },
+      {
+        "selector": "html body.light-theme footer.site-footer a.link.icon.github_issue:nth-of-type(10) img.inline-icon",
+        "alt": "bug report",
+        "src": "/static/hash-mh7qv2oc/img/bug-report-white-96px.png"
+      }
+    ],
+    "content": [
+      {
+        "selector": "html head title",
+        "content": "emoji_picker_flutter | Flutter package"
+      },
+      {
+        "selector": "button#-account-login",
+        "content": "Sign in"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container.hoverable:nth-of-type(2) button.nav-main-button",
+        "content": "Help"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container.hoverable:nth-of-type(2) div.nav-hover-popup div.nav-table-columns div.nav-table-column h3",
+        "content": "pub.dev"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container.hoverable:nth-of-type(2) div.nav-hover-popup div.nav-table-columns div.nav-table-column a.nav-link",
+        "content": "Searching for packages"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container.hoverable:nth-of-type(2) div.nav-hover-popup div.nav-table-columns div.nav-table-column a.nav-link:nth-of-type(2)",
+        "content": "Package scoring and pub points"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container.hoverable:nth-of-type(2) div.nav-hover-popup div.nav-table-columns div.nav-table-column:nth-of-type(2) h3",
+        "content": "Flutter"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container.hoverable:nth-of-type(2) div.nav-hover-popup div.nav-table-columns div.nav-table-column:nth-of-type(2) a.nav-link",
+        "content": "Using packages"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container.hoverable:nth-of-type(2) div.nav-hover-popup div.nav-table-columns div.nav-table-column:nth-of-type(2) a.nav-link:nth-of-type(2)",
+        "content": "Developing packages and plugins"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container.hoverable:nth-of-type(2) div.nav-hover-popup div.nav-table-columns div.nav-table-column:nth-of-type(2) a.nav-link:nth-of-type(3)",
+        "content": "Publishing a package"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container.hoverable:nth-of-type(2) div.nav-hover-popup div.nav-table-columns div.nav-table-column:nth-of-type(3) h3",
+        "content": "Dart"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container.hoverable:nth-of-type(2) div.nav-hover-popup div.nav-table-columns div.nav-table-column:nth-of-type(3) a.nav-link",
+        "content": "Using packages"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container.hoverable:nth-of-type(2) div.nav-hover-popup div.nav-table-columns div.nav-table-column:nth-of-type(3) a.nav-link:nth-of-type(2)",
+        "content": "Publishing a package"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container-mobile.foldable:nth-of-type(3) h3.foldable-button",
+        "content": "pub.dev"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container-mobile.foldable:nth-of-type(3) div.foldable-content a.nav-link",
+        "content": "Searching for packages"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container-mobile.foldable:nth-of-type(3) div.foldable-content a.nav-link:nth-of-type(2)",
+        "content": "Package scoring and pub points"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container-mobile.foldable:nth-of-type(4) h3.foldable-button",
+        "content": "Flutter"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container-mobile.foldable:nth-of-type(4) div.foldable-content a.nav-link",
+        "content": "Using packages"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container-mobile.foldable:nth-of-type(4) div.foldable-content a.nav-link:nth-of-type(2)",
+        "content": "Developing packages and plugins"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container-mobile.foldable:nth-of-type(4) div.foldable-content a.nav-link:nth-of-type(3)",
+        "content": "Publishing a package"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container-mobile.foldable:nth-of-type(5) h3.foldable-button",
+        "content": "Dart"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container-mobile.foldable:nth-of-type(5) div.foldable-content a.nav-link",
+        "content": "Using packages"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container-mobile.foldable:nth-of-type(5) div.foldable-content a.nav-link:nth-of-type(2)",
+        "content": "Publishing a package"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-header.-is-loose div.detail-container div.detail-header-outer-block div.detail-header-content-block h1.title.pub-monochrome-icon-hoverable span.pkg-page-title-copy div.pkg-page-title-copy-feedback span.code",
+        "content": "emoji_picker_flutter: ^4.3.0"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-header.-is-loose div.detail-container div.detail-header-outer-block div.detail-header-content-block div.metadata span a.-x-ago",
+        "content": "2 months ago"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-header.-is-loose div.detail-container div.detail-header-outer-block div.detail-header-content-block div.metadata a.-pub-publisher",
+        "content": "fintasys.com"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-header.-is-loose div.detail-container div.detail-header-outer-block div.detail-header-content-block div.metadata span.package-badge:nth-of-type(2)",
+        "content": "Dart 3 compatible"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-header.-is-loose div.detail-container div.detail-header-outer-block div.detail-header-content-block div.detail-tags-and-like:nth-of-type(2) div.detail-tags div.-pub-tag-badge span.tag-badge-main",
+        "content": "SDK"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-header.-is-loose div.detail-container div.detail-header-outer-block div.detail-header-content-block div.detail-tags-and-like:nth-of-type(2) div.detail-tags div.-pub-tag-badge a.tag-badge-sub",
+        "content": "Flutter"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-header.-is-loose div.detail-container div.detail-header-outer-block div.detail-header-content-block div.detail-tags-and-like:nth-of-type(2) div.detail-tags div.-pub-tag-badge:nth-of-type(2) span.tag-badge-main",
+        "content": "Platform"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-header.-is-loose div.detail-container div.detail-header-outer-block div.detail-header-content-block div.detail-tags-and-like:nth-of-type(2) div.detail-tags div.-pub-tag-badge:nth-of-type(2) a.tag-badge-sub",
+        "content": "Android"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-header.-is-loose div.detail-container div.detail-header-outer-block div.detail-header-content-block div.detail-tags-and-like:nth-of-type(2) div.detail-tags div.-pub-tag-badge:nth-of-type(2) a.tag-badge-sub:nth-of-type(2)",
+        "content": "iOS"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-header.-is-loose div.detail-container div.detail-header-outer-block div.detail-header-content-block div.detail-tags-and-like:nth-of-type(2) div.detail-tags div.-pub-tag-badge:nth-of-type(2) a.tag-badge-sub:nth-of-type(3)",
+        "content": "Linux"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-header.-is-loose div.detail-container div.detail-header-outer-block div.detail-header-content-block div.detail-tags-and-like:nth-of-type(2) div.detail-tags div.-pub-tag-badge:nth-of-type(2) a.tag-badge-sub:nth-of-type(4)",
+        "content": "macOS"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-header.-is-loose div.detail-container div.detail-header-outer-block div.detail-header-content-block div.detail-tags-and-like:nth-of-type(2) div.detail-tags div.-pub-tag-badge:nth-of-type(2) a.tag-badge-sub:nth-of-type(5)",
+        "content": "web"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-header.-is-loose div.detail-container div.detail-header-outer-block div.detail-header-content-block div.detail-tags-and-like:nth-of-type(2) div.detail-tags div.-pub-tag-badge:nth-of-type(2) a.tag-badge-sub:nth-of-type(6)",
+        "content": "Windows"
+      },
+      {
+        "selector": "span#likes-count",
+        "content": "588"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-container:nth-of-type(2) div.detail-lead div.detail-metadata-toggle div.detail-metadata-toggle-icon",
+        "content": "→"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-container:nth-of-type(2) div.detail-lead div.detail-metadata-toggle h3.detail-lead-title",
+        "content": "Metadata"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-container:nth-of-type(2) div.detail-lead p.detail-lead-text",
+        "content": "A Flutter package that provides an Emoji picker widget with 1500+ emojis in 8 categories."
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-container:nth-of-type(2) div.detail-lead p.detail-lead-more:nth-of-type(2) a.detail-metadata-toggle",
+        "content": "More..."
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-tabs-wide-header div.detail-container ul.detail-tabs-header li.detail-tab.tab-button.detail-tab-readme-title.-active",
+        "content": "Readme"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-tabs-wide-header div.detail-container ul.detail-tabs-header li.detail-tab.tab-link.detail-tab-changelog-title:nth-of-type(2) a",
+        "content": "Changelog"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-tabs-wide-header div.detail-container ul.detail-tabs-header li.detail-tab.tab-link.detail-tab-example-title:nth-of-type(3) a",
+        "content": "Example"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-tabs-wide-header div.detail-container ul.detail-tabs-header li.detail-tab.tab-link.detail-tab-installing-title:nth-of-type(4) a",
+        "content": "Installing"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-tabs-wide-header div.detail-container ul.detail-tabs-header li.detail-tab.tab-link.detail-tab-versions-title:nth-of-type(5) a",
+        "content": "Versions"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-tabs-wide-header div.detail-container ul.detail-tabs-header li.detail-tab.tab-link.detail-tab-analysis-title:nth-of-type(6) a",
+        "content": "Scores"
+      },
+      {
+        "selector": "h1#emoji_picker_flutter a.hash-link",
+        "content": "#"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p:nth-of-type(2)",
+        "content": "Yet another Emoji Picker for Flutter 🤩"
+      },
+      {
+        "selector": "h2#key-features a.hash-link",
+        "content": "#"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body ul li",
+        "content": "Lightweight Package"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body ul li:nth-of-type(2)",
+        "content": "Fast Loading"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body ul li:nth-of-type(3)",
+        "content": "Null-safety"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body ul li:nth-of-type(4)",
+        "content": "Completely customizable"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body ul li:nth-of-type(5)",
+        "content": "Material Design and Cupertino mode"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body ul li:nth-of-type(6)",
+        "content": "Emojis that cannot be displayed are filtered out (Android Only)"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body ul li:nth-of-type(7)",
+        "content": "Optional recently used emoji tab"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body ul li:nth-of-type(8)",
+        "content": "Skin Tone Support"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body ul li:nth-of-type(9)",
+        "content": "Custom-Font Support"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body ul li:nth-of-type(10)",
+        "content": "Search Option"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body ul li:nth-of-type(11)",
+        "content": "Localization (supporting 8 Languages)"
+      },
+      {
+        "selector": "h2#getting-started a.hash-link",
+        "content": "#"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body pre code.language-dart",
+        "content": "import 'package:flutter/foundation.dart' as foundation;\n\nEmojiPicker(\n    onEmojiSelected: (Category category, Emoji emoji) {\n        // Do something when emoji is tapped (optional)\n    },\n    onBackspacePressed: () {\n        // Do something when the user taps the backspace button (optional)\n        // Set it to null to hide the Backspace-Button\n    },\n    textEditingController: textEditingController, // pass here the same [TextEditingController] that is connected to your input field, usually a [TextFormField]\n    config: Config(\n        height: 256,\n        bgColor: const Color(0xFFF2F2F2),\n        checkPlatformCompatibility: true,\n        emojiViewConfig: EmojiViewConfig(\n        // Issue: https://github.com/flutter/flutter/issues/28894\n        emojiSizeMax: 28 *\n        (foundation.defaultTargetPlatform == TargetPlatform.iOS\n            ?  1.20\n            :  1.0),\n        ),\n        viewOrderConfig: const ViewOrderConfig(\n            top: EmojiPickerItem.categoryBar,\n            middle: EmojiPickerItem.emojiView,\n            bottom: EmojiPickerItem.searchBar,\n        ),\n        skinToneConfig: const SkinToneConfig(),\n        categoryViewConfig: const CategoryViewConfig(),\n        bottomActionBarConfig: const BottomActionBarConfig(),\n        searchViewConfig: const SearchViewConfig(),\n    ),\n)"
+      },
+      {
+        "selector": "h2#examples a.hash-link",
+        "content": "#"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p:nth-of-type(4) a",
+        "content": "here"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body ol li p",
+        "content": "Default (Some Emoji might not be displayed correctly e.g. Frowning Face 🚨 Will be fixed with 3.17)"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body ol li:nth-of-type(2) p a",
+        "content": "issue 205"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body ol li:nth-of-type(2) p:nth-of-type(2)",
+        "content": ""
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body ol li:nth-of-type(3) p",
+        "content": "WhatsApp like customization"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body ol li:nth-of-type(3) p:nth-of-type(2)",
+        "content": ""
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p:nth-of-type(5)",
+        "content": "*All screenshots from Android. iOS displays by default most emoji correctly."
+      },
+      {
+        "selector": "h2#config a.hash-link",
+        "content": "#"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table thead tr th",
+        "content": "property"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table thead tr th:nth-of-type(2)",
+        "content": "description"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table thead tr th:nth-of-type(3)",
+        "content": "default"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr td",
+        "content": "height"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr td:nth-of-type(2)",
+        "content": "Height of Emoji Picker"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr td:nth-of-type(3)",
+        "content": "256"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(2) td",
+        "content": "viewOrderConfig"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(2) td:nth-of-type(2)",
+        "content": "The exact order in which category view, emoji view and bottom bar appear"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(2) td:nth-of-type(3)",
+        "content": "const ViewOrderConfig()"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(3) td",
+        "content": "checkPlatformCompatibility"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(3) td:nth-of-type(2)",
+        "content": "Whether to filter out glyphs that platform cannot render with the default font (Android)."
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(3) td:nth-of-type(3)",
+        "content": "true"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(4) td",
+        "content": "emojiSet"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(4) td:nth-of-type(2) code",
+        "content": "defaultEmojiSet"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(4) td:nth-of-type(3)",
+        "content": "null"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(5) td",
+        "content": "emojiTextStyle"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(5) td:nth-of-type(2)",
+        "content": "Text style to apply to individual emoji icons. Can be used to define custom emoji font either with GoogleFonts library or bundled with the app."
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(5) td:nth-of-type(3)",
+        "content": "null"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(6) td",
+        "content": "customBackspaceIcon"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(6) td:nth-of-type(2)",
+        "content": "Custom Icon for Backspace button"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(6) td:nth-of-type(3)",
+        "content": "null"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(7) td",
+        "content": "customSearchIcon"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(7) td:nth-of-type(2)",
+        "content": "Custom Icon for Search button"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(7) td:nth-of-type(3)",
+        "content": "null"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(8) td",
+        "content": "emojiViewConfig"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(8) td:nth-of-type(2)",
+        "content": "Emoji view config"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(8) td:nth-of-type(3)",
+        "content": "const EmojiViewConfig()"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(9) td",
+        "content": "skinToneConfig"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(9) td:nth-of-type(2)",
+        "content": "Skin tone config"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(9) td:nth-of-type(3)",
+        "content": "const SkinToneConfig"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(10) td",
+        "content": "categoryViewConfig"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(10) td:nth-of-type(2)",
+        "content": "Category view config"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(10) td:nth-of-type(3)",
+        "content": "const CategoryViewConfig"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(11) td",
+        "content": "bottomActionBarConfig"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(11) td:nth-of-type(2)",
+        "content": "Bottom action bar config"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(11) td:nth-of-type(3)",
+        "content": "const BottomActionBarConfig()"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(12) td",
+        "content": "searchViewConfig"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(12) td:nth-of-type(2)",
+        "content": "Search View config"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table tbody tr:nth-of-type(12) td:nth-of-type(3)",
+        "content": "const SearchViewConfig"
+      },
+      {
+        "selector": "h2#emoji-view-config a.hash-link",
+        "content": "#"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) thead tr th",
+        "content": "property"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) thead tr th:nth-of-type(2)",
+        "content": "description"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) thead tr th:nth-of-type(3)",
+        "content": "default"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr td",
+        "content": "columns"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr td:nth-of-type(2)",
+        "content": "Number of emojis per row"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr td:nth-of-type(3)",
+        "content": "7"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr:nth-of-type(2) td",
+        "content": "emojiSizeMax"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr:nth-of-type(2) td:nth-of-type(2)",
+        "content": "Width and height the emoji will be maximal displayed"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr:nth-of-type(2) td:nth-of-type(3)",
+        "content": "32.0"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr:nth-of-type(3) td",
+        "content": "backgroundColor"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr:nth-of-type(3) td:nth-of-type(2)",
+        "content": "The background color of the emoji view"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr:nth-of-type(3) td:nth-of-type(3)",
+        "content": "const Color(0xFFEBEFF2)"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr:nth-of-type(4) td",
+        "content": "verticalSpacing"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr:nth-of-type(4) td:nth-of-type(2)",
+        "content": "Vertical spacing between emojis"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr:nth-of-type(4) td:nth-of-type(3)",
+        "content": "0"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr:nth-of-type(5) td",
+        "content": "horizontalSpacing"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr:nth-of-type(5) td:nth-of-type(2)",
+        "content": "Horizontal spacing between emojis"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr:nth-of-type(5) td:nth-of-type(3)",
+        "content": "0"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr:nth-of-type(6) td",
+        "content": "gridPadding"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr:nth-of-type(6) td:nth-of-type(2)",
+        "content": "The padding of GridView"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr:nth-of-type(6) td:nth-of-type(3)",
+        "content": "EdgeInsets.zero"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr:nth-of-type(7) td",
+        "content": "recentsLimit"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr:nth-of-type(7) td:nth-of-type(2)",
+        "content": "Limit of recently used emoji that will be saved"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr:nth-of-type(7) td:nth-of-type(3)",
+        "content": "28"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr:nth-of-type(8) td",
+        "content": "replaceEmojiOnLimitExceed"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr:nth-of-type(8) td:nth-of-type(2)",
+        "content": "Replace latest emoji on recents list on limit exceed"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr:nth-of-type(8) td:nth-of-type(3)",
+        "content": "false"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr:nth-of-type(9) td",
+        "content": "noRecents"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr:nth-of-type(9) td:nth-of-type(2) code",
+        "content": "const"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr:nth-of-type(9) td:nth-of-type(3)",
+        "content": "Text('No Recents', style: TextStyle(fontSize: 20, color: Colors.black26), textAlign: TextAlign.center)"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr:nth-of-type(10) td",
+        "content": "loadingIndicator"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr:nth-of-type(10) td:nth-of-type(2) code",
+        "content": "const"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr:nth-of-type(10) td:nth-of-type(3)",
+        "content": "SizedBox.shrink()"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr:nth-of-type(11) td",
+        "content": "buttonMode"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr:nth-of-type(11) td:nth-of-type(2)",
+        "content": "Choose between Material and Cupertino button style"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(2) tbody tr:nth-of-type(11) td:nth-of-type(3)",
+        "content": "ButtonMode.MATERIAL"
+      },
+      {
+        "selector": "h2#skintone-config a.hash-link",
+        "content": "#"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(3) thead tr th",
+        "content": "property"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(3) thead tr th:nth-of-type(2)",
+        "content": "description"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(3) thead tr th:nth-of-type(3)",
+        "content": "default"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(3) tbody tr td",
+        "content": "enableSkinTones"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(3) tbody tr td:nth-of-type(2)",
+        "content": "Enable feature to select a skin tone of certain emoji's"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(3) tbody tr td:nth-of-type(3)",
+        "content": "true"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(3) tbody tr:nth-of-type(2) td",
+        "content": "dialogBackgroundColor"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(3) tbody tr:nth-of-type(2) td:nth-of-type(2)",
+        "content": "The background color of the skin tone dialog"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(3) tbody tr:nth-of-type(2) td:nth-of-type(3)",
+        "content": "Colors.white"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(3) tbody tr:nth-of-type(3) td",
+        "content": "indicatorColor"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(3) tbody tr:nth-of-type(3) td:nth-of-type(2)",
+        "content": "Color of the small triangle next to multiple skin tone emoji"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(3) tbody tr:nth-of-type(3) td:nth-of-type(3)",
+        "content": "Colors.grey"
+      },
+      {
+        "selector": "h2#category-view-config a.hash-link",
+        "content": "#"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) thead tr th",
+        "content": "property"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) thead tr th:nth-of-type(2)",
+        "content": "description"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) thead tr th:nth-of-type(3)",
+        "content": "default"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr td",
+        "content": "tabBarHeight"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr td:nth-of-type(2)",
+        "content": "Height of category tab bar"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr td:nth-of-type(3)",
+        "content": "46.0"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(2) td",
+        "content": "tabIndicatorAnimDuration"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(2) td:nth-of-type(2)",
+        "content": "Duration of tab indicator to animate to next category"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(2) td:nth-of-type(3)",
+        "content": "Duration(milliseconds: 300)"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(3) td",
+        "content": "initCategory"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(3) td:nth-of-type(2)",
+        "content": "The initial Category that will be selected"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(3) td:nth-of-type(3)",
+        "content": "Category.RECENT"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(4) td",
+        "content": "recentTabBehavior"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(4) td:nth-of-type(2)",
+        "content": "Show extra tab with recently / popular used emoji"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(4) td:nth-of-type(3)",
+        "content": "RecentTabBehavior.RECENT"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(5) td",
+        "content": "extraTab"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(5) td:nth-of-type(2)",
+        "content": "Add extra tab to category tab bar for backspace or search button"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(5) td:nth-of-type(3)",
+        "content": "CategoryExtraTab.NONE"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(6) td",
+        "content": "backgroundColor"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(6) td:nth-of-type(2)",
+        "content": "Background color of category tab bar"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(6) td:nth-of-type(3)",
+        "content": "const Color(0xFFEBEFF2)"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(7) td",
+        "content": "indicatorColor"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(7) td:nth-of-type(2)",
+        "content": "The color of the category indicator"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(7) td:nth-of-type(3)",
+        "content": "Colors.blue"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(8) td",
+        "content": "iconColor"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(8) td:nth-of-type(2)",
+        "content": "The color of the category icons"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(8) td:nth-of-type(3)",
+        "content": "Colors.grey"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(9) td",
+        "content": "iconColorSelected"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(9) td:nth-of-type(2)",
+        "content": "The color of the category icon when selected"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(9) td:nth-of-type(3)",
+        "content": "Colors.blue"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(10) td",
+        "content": "backspaceColor"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(10) td:nth-of-type(2)",
+        "content": "The color of the backspace icon button"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(10) td:nth-of-type(3)",
+        "content": "Colors.blue"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(11) td",
+        "content": "categoryIcons"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(11) td:nth-of-type(2)",
+        "content": "Determines the icon to display for each Category. You can change icons by setting them in the constructor."
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(11) td:nth-of-type(3)",
+        "content": "CategoryIcons()"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(12) td",
+        "content": "customCategoryView"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(12) td:nth-of-type(2)",
+        "content": "Customize the category widget"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(4) tbody tr:nth-of-type(12) td:nth-of-type(3)",
+        "content": "null"
+      },
+      {
+        "selector": "h2#bottom-action-bar-config a.hash-link",
+        "content": "#"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(5) thead tr th",
+        "content": "property"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(5) thead tr th:nth-of-type(2)",
+        "content": "description"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(5) thead tr th:nth-of-type(3)",
+        "content": "default"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(5) tbody tr td",
+        "content": "showBackspaceButton"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(5) tbody tr td:nth-of-type(2)",
+        "content": "Show backspace button in bottom action bar"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(5) tbody tr td:nth-of-type(3)",
+        "content": "true"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(5) tbody tr:nth-of-type(2) td",
+        "content": "showSearchViewButton"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(5) tbody tr:nth-of-type(2) td:nth-of-type(2)",
+        "content": "Show search-view button in bottom action bar"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(5) tbody tr:nth-of-type(2) td:nth-of-type(3)",
+        "content": "true"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(5) tbody tr:nth-of-type(3) td",
+        "content": "backgroundColor"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(5) tbody tr:nth-of-type(3) td:nth-of-type(2)",
+        "content": "Background color of bottom action bar"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(5) tbody tr:nth-of-type(3) td:nth-of-type(3)",
+        "content": "Colors.blue"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(5) tbody tr:nth-of-type(4) td",
+        "content": "buttonIconColor"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(5) tbody tr:nth-of-type(4) td:nth-of-type(2)",
+        "content": "Icon color of buttons"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(5) tbody tr:nth-of-type(4) td:nth-of-type(3)",
+        "content": "Colors.white"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(5) tbody tr:nth-of-type(5) td",
+        "content": "inputTextStyle"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(5) tbody tr:nth-of-type(5) td:nth-of-type(2)",
+        "content": "Custom TextStyle of TextField for input text"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(5) tbody tr:nth-of-type(5) td:nth-of-type(3)",
+        "content": "null"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(5) tbody tr:nth-of-type(6) td",
+        "content": "hintTextStyle"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(5) tbody tr:nth-of-type(6) td:nth-of-type(2)",
+        "content": "Custom TextStyle of TextField for hint"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(5) tbody tr:nth-of-type(6) td:nth-of-type(3)",
+        "content": "null"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(5) tbody tr:nth-of-type(7) td",
+        "content": "customBottomActionBar"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(5) tbody tr:nth-of-type(7) td:nth-of-type(2)",
+        "content": "Customize the bottom action bar widget"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(5) tbody tr:nth-of-type(7) td:nth-of-type(3)",
+        "content": "null"
+      },
+      {
+        "selector": "h2#search-view-config a.hash-link",
+        "content": "#"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(6) thead tr th",
+        "content": "property"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(6) thead tr th:nth-of-type(2)",
+        "content": "description"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(6) thead tr th:nth-of-type(3)",
+        "content": "default"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(6) tbody tr td",
+        "content": "backgroundColor"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(6) tbody tr td:nth-of-type(2)",
+        "content": "Background color of search view"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(6) tbody tr td:nth-of-type(3)",
+        "content": "const Color(0xFFEBEFF2)"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(6) tbody tr:nth-of-type(2) td",
+        "content": "buttonColor"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(6) tbody tr:nth-of-type(2) td:nth-of-type(2)",
+        "content": "Fill color of hide search view button"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(6) tbody tr:nth-of-type(2) td:nth-of-type(3)",
+        "content": "Colors.transparent"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(6) tbody tr:nth-of-type(3) td",
+        "content": "buttonIconColor"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(6) tbody tr:nth-of-type(3) td:nth-of-type(2)",
+        "content": "Icon color of hide search view button"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(6) tbody tr:nth-of-type(3) td:nth-of-type(3)",
+        "content": "Colors.black26"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(6) tbody tr:nth-of-type(4) td",
+        "content": "hintText"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(6) tbody tr:nth-of-type(4) td:nth-of-type(2)",
+        "content": "Custom hint text"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(6) tbody tr:nth-of-type(4) td:nth-of-type(3)",
+        "content": "'Search'"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(6) tbody tr:nth-of-type(5) td",
+        "content": "customSearchView"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(6) tbody tr:nth-of-type(5) td:nth-of-type(2)",
+        "content": "Customize search view widget"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body table:nth-of-type(6) tbody tr:nth-of-type(5) td:nth-of-type(3)",
+        "content": "null"
+      },
+      {
+        "selector": "h2#backspace-button a.hash-link",
+        "content": "#"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p:nth-of-type(6) code",
+        "content": "CategoryViewConfig"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p:nth-of-type(6) code:nth-of-type(2)",
+        "content": "extraTab"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p:nth-of-type(6) code:nth-of-type(3)",
+        "content": "CategoryExtraTab.BACKSPACE"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p:nth-of-type(6) code:nth-of-type(4)",
+        "content": "onBackspacePressed: () { }"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p:nth-of-type(7)",
+        "content": "Bottom Backspace Button"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p:nth-of-type(8)",
+        "content": "Top Backspace Button"
+      },
+      {
+        "selector": "h2#custom-view a.hash-link",
+        "content": "#"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p:nth-of-type(9) code",
+        "content": "customWidget"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p:nth-of-type(9) code:nth-of-type(2)",
+        "content": "EmojiPickerView"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body pre:nth-of-type(2) code.language-dart",
+        "content": "class CustomView extends EmojiPickerView {\n  CustomView(Config config, EmojiViewState state, VoidCallback showSearchBar,\n      {super.key})\n      : super(\n          config,\n          state,\n          showSearchBar,\n        );\n\n  @override\n  _CustomViewState createState() => _CustomViewState();\n}\n\nclass _CustomViewState extends State<CustomView> {\n  @override\n  Widget build(BuildContext context) {\n    // TODO: implement build\n    // Access widget.config, widget.state and widget.showSearchBar\n    return Container();\n  }\n}\n\n\n\nEmojiPicker(\n    onEmojiSelected: (category, emoji) {/* ...*/},\n    config: Config(/* ...*/),\n    customWidget: (config, state, showSearchView) => CustomView(\n        config,\n        state,\n        showSearchView,\n    ),\n)"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p:nth-of-type(10)",
+        "content": "Each component can also be completely customized individually:"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body ul:nth-of-type(2) li p code",
+        "content": "SearchViewConfig"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body ul:nth-of-type(2) li p code:nth-of-type(2)",
+        "content": "customSearchView"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body ul:nth-of-type(2) li:nth-of-type(2) p code",
+        "content": "CategoryViewConfig"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body ul:nth-of-type(2) li:nth-of-type(2) p code:nth-of-type(2)",
+        "content": "customCategoryView"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body ul:nth-of-type(2) li:nth-of-type(3) p code",
+        "content": "BottomActionBarConfig"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body ul:nth-of-type(2) li:nth-of-type(3) p code:nth-of-type(2)",
+        "content": "customBottomActionBar"
+      },
+      {
+        "selector": "h2#localization a.hash-link",
+        "content": "#"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p:nth-of-type(11)",
+        "content": "The package currently supports following languages: en, de, es, fr, hi, it, ja, pt, ru, zh.\nIn order to let the EmojiPicker choose the right language you need to pass the locale to the config:"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body pre:nth-of-type(3) code.language-dart",
+        "content": "Config(\n    locale: const Locale(\"ja\"),\n)"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p:nth-of-type(12) code",
+        "content": "/automation/create_emoji_set.sh"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p:nth-of-type(12) code:nth-of-type(2)",
+        "content": "emojiSet"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body pre:nth-of-type(4) code.language-dart",
+        "content": "EmojiPicker(\n    config: Config(\n         emojiSet: _getEmojiLocale,\n    ),\n)\n\nList<CategoryEmoji> _getEmojiLocale(Locale locale) {\n  switch (locale.languageCode) {\n    case \"ja\":\n      return emojiSetJapanese;\n    case \"de\":\n      return emojiSetGerman;\n    default:\n      return emojiSetEnglish;\n  }\n}"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p:nth-of-type(13) code",
+        "content": "/automation/create_emoji_set.sh"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body ol:nth-of-type(2) li",
+        "content": "Fork the repository and open the directory from your terminal"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body ol:nth-of-type(2) li:nth-of-type(2)",
+        "content": "Run command below"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body pre:nth-of-type(5) code",
+        "content": "cd automation && ./create_emoji_set.sh pt Portuguese"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p:nth-of-type(14)",
+        "content": "Feel free to create an issue if you think a specific language should be supported by default. We keep the languages limited for now to avoid the package size growing unnecesserily large."
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p:nth-of-type(15)",
+        "content": "In case you want to support only a single language you can just return the same EmojiSet for all locales."
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body pre:nth-of-type(6) code",
+        "content": "List<CategoryEmoji> _getEmojiLocale(String locale) {\n    return emojiSetEnglish;\n}"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p:nth-of-type(16) code",
+        "content": "defaultEmojiSet"
+      },
+      {
+        "selector": "h2#extended-usage-with-emojipickerutils a.hash-link",
+        "content": "#"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p:nth-of-type(17) a",
+        "content": "here"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body pre:nth-of-type(7) code.language-dart",
+        "content": "// Get recently used emoji\nfinal recentEmojis = await EmojiPickerUtils().getRecentEmojis();\n\n// Search for related emoticons based on keywords\nfinal filterEmojiEntities = await EmojiPickerUtils().searchEmoji(\"face\", defaultEmojiSet);\n\n// Add an emoji to recently used list or increase its counter\nfinal newRecentEmojis = await EmojiPickerUtils().addEmojiToRecentlyUsed(key: key, emoji: emoji);\n// Important: Needs same key instance of type GlobalKey<EmojiPickerState> here and for the EmojiPicker-Widget in order to work properly\n\n// Highlight emojis with custom style spans\nfinal textSpans = EmojiPickerUtils().setEmojiTextStyle('text', emojiStyle: style);\n\n// Clear list of recent Emojis\nEmojiPickerUtils().clearRecentEmojis(key: key);"
+      },
+      {
+        "selector": "h2#feel-free-to-contribute-to-this-package- a.hash-link",
+        "content": "#"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p:nth-of-type(18)",
+        "content": "Always happy if anyone wants to help to improve this package!"
+      },
+      {
+        "selector": "h2#if-you-need-any-features a.hash-link",
+        "content": "#"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p:nth-of-type(19)",
+        "content": "Please open an issue so that we can discuss your feature request 🙏"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box a.packages-scores div.packages-score.packages-score-like div.packages-score-value.-has-value span.packages-score-value-number",
+        "content": "588"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box a.packages-scores div.packages-score.packages-score-like div.packages-score-label:nth-of-type(2)",
+        "content": "likes"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box a.packages-scores div.packages-score.packages-score-health:nth-of-type(2) div.packages-score-value.-has-value span.packages-score-value-number",
+        "content": "160"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box a.packages-scores div.packages-score.packages-score-health:nth-of-type(2) div.packages-score-label:nth-of-type(2)",
+        "content": "points"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box a.packages-scores div.packages-score.packages-score-downloads:nth-of-type(3) div.packages-score-value.-has-value span.packages-score-value-number",
+        "content": "77k"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box a.packages-scores div.packages-score.packages-score-downloads:nth-of-type(3) div.packages-score-label:nth-of-type(2)",
+        "content": "downloads"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box h3.title",
+        "content": "Publisher"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box p a",
+        "content": "fintasys.com"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box h3.title:nth-of-type(2)",
+        "content": "Weekly Downloads"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box h3.title.pkg-infobox-metadata:nth-of-type(3)",
+        "content": "Metadata"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box p:nth-of-type(2)",
+        "content": "A Flutter package that provides an Emoji picker widget with 1500+ emojis in 8 categories."
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box p:nth-of-type(3) a.link",
+        "content": "Repository (GitHub)"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box p:nth-of-type(3) a.link:nth-of-type(2)",
+        "content": "View/report issues"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box h3.title:nth-of-type(4)",
+        "content": "Documentation"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box p:nth-of-type(4) a.link",
+        "content": "API reference"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box h3.title:nth-of-type(5)",
+        "content": "License"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box p:nth-of-type(5) a",
+        "content": "license"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box h3.title:nth-of-type(6)",
+        "content": "Dependencies"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box p:nth-of-type(6) a",
+        "content": "flutter"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box p:nth-of-type(6) a:nth-of-type(2)",
+        "content": "flutter_web_plugins"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box p:nth-of-type(6) a:nth-of-type(3)",
+        "content": "plugin_platform_interface"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box p:nth-of-type(6) a:nth-of-type(4)",
+        "content": "shared_preferences"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box p:nth-of-type(6) a:nth-of-type(5)",
+        "content": "universal_io"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box p:nth-of-type(6) a:nth-of-type(6)",
+        "content": "web"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box h3.title:nth-of-type(7)",
+        "content": "More"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box p:nth-of-type(7) a",
+        "content": "Packages that depend on emoji_picker_flutter"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) h3.detail-metadata-title span.detail-metadata-toggle",
+        "content": "←"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box a.packages-scores div.packages-score.packages-score-like div.packages-score-value.-has-value span.packages-score-value-number",
+        "content": "588"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box a.packages-scores div.packages-score.packages-score-like div.packages-score-label:nth-of-type(2)",
+        "content": "likes"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box a.packages-scores div.packages-score.packages-score-health:nth-of-type(2) div.packages-score-value.-has-value span.packages-score-value-number",
+        "content": "160"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box a.packages-scores div.packages-score.packages-score-health:nth-of-type(2) div.packages-score-label:nth-of-type(2)",
+        "content": "points"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box a.packages-scores div.packages-score.packages-score-downloads:nth-of-type(3) div.packages-score-value.-has-value span.packages-score-value-number",
+        "content": "77k"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box a.packages-scores div.packages-score.packages-score-downloads:nth-of-type(3) div.packages-score-label:nth-of-type(2)",
+        "content": "downloads"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box h3.title",
+        "content": "Publisher"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box p a",
+        "content": "fintasys.com"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box h3.title:nth-of-type(2)",
+        "content": "Weekly Downloads"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box h3.title.pkg-infobox-metadata:nth-of-type(3)",
+        "content": "Metadata"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box p:nth-of-type(2)",
+        "content": "A Flutter package that provides an Emoji picker widget with 1500+ emojis in 8 categories."
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box p:nth-of-type(3) a.link",
+        "content": "Repository (GitHub)"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box p:nth-of-type(3) a.link:nth-of-type(2)",
+        "content": "View/report issues"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box h3.title:nth-of-type(4)",
+        "content": "Documentation"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box p:nth-of-type(4) a.link",
+        "content": "API reference"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box h3.title:nth-of-type(5)",
+        "content": "License"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box p:nth-of-type(5) a",
+        "content": "license"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box h3.title:nth-of-type(6)",
+        "content": "Dependencies"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box p:nth-of-type(6) a",
+        "content": "flutter"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box p:nth-of-type(6) a:nth-of-type(2)",
+        "content": "flutter_web_plugins"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box p:nth-of-type(6) a:nth-of-type(3)",
+        "content": "plugin_platform_interface"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box p:nth-of-type(6) a:nth-of-type(4)",
+        "content": "shared_preferences"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box p:nth-of-type(6) a:nth-of-type(5)",
+        "content": "universal_io"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box p:nth-of-type(6) a:nth-of-type(6)",
+        "content": "web"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box h3.title:nth-of-type(7)",
+        "content": "More"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box p:nth-of-type(7) a",
+        "content": "Packages that depend on emoji_picker_flutter"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) p.detail-lead-back a.detail-metadata-toggle",
+        "content": "Back"
+      },
+      {
+        "selector": "html body.light-theme footer.site-footer a.link",
+        "content": "Dart language"
+      },
+      {
+        "selector": "html body.light-theme footer.site-footer a.link.sep:nth-of-type(2)",
+        "content": "Report package"
+      },
+      {
+        "selector": "html body.light-theme footer.site-footer a.link.sep:nth-of-type(3)",
+        "content": "Policy"
+      },
+      {
+        "selector": "html body.light-theme footer.site-footer a.link.sep:nth-of-type(4)",
+        "content": "Terms"
+      },
+      {
+        "selector": "html body.light-theme footer.site-footer a.link.sep:nth-of-type(5)",
+        "content": "API Terms"
+      },
+      {
+        "selector": "html body.light-theme footer.site-footer a.link.sep:nth-of-type(6)",
+        "content": "Security"
+      },
+      {
+        "selector": "html body.light-theme footer.site-footer a.link.sep:nth-of-type(7)",
+        "content": "Privacy"
+      },
+      {
+        "selector": "html body.light-theme footer.site-footer a.link.sep:nth-of-type(8)",
+        "content": "Help"
+      }
+    ],
+    "internal_links": [
+      {
+        "selector": "html body.light-theme div.site-header a.logo[href=\"/\"]",
+        "content": "",
+        "href": "/"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container.hoverable:nth-of-type(2) div.nav-hover-popup div.nav-table-columns div.nav-table-column a.nav-link[href=\"/help/search\"]",
+        "content": "Searching for packages",
+        "href": "/help/search"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container.hoverable:nth-of-type(2) div.nav-hover-popup div.nav-table-columns div.nav-table-column a.nav-link:nth-of-type(2)[href=\"/help/scoring\"]",
+        "content": "Package scoring and pub points",
+        "href": "/help/scoring"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container-mobile.foldable:nth-of-type(3) div.foldable-content a.nav-link[href=\"/help/search\"]",
+        "content": "Searching for packages",
+        "href": "/help/search"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container-mobile.foldable:nth-of-type(3) div.foldable-content a.nav-link:nth-of-type(2)[href=\"/help/scoring\"]",
+        "content": "Package scoring and pub points",
+        "href": "/help/scoring"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-header.-is-loose div.detail-container div.detail-header-outer-block div.detail-header-content-block div.metadata span a.-x-ago[href=\"\"]",
+        "content": "2 months ago",
+        "href": ""
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-header.-is-loose div.detail-container div.detail-header-outer-block div.detail-header-content-block div.metadata a.-pub-publisher[href=\"/publishers/fintasys.com\"]",
+        "content": "fintasys.com",
+        "href": "/publishers/fintasys.com"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-header.-is-loose div.detail-container div.detail-header-outer-block div.detail-header-content-block div.detail-tags-and-like:nth-of-type(2) div.detail-tags div.-pub-tag-badge a.tag-badge-sub[href=\"/packages?q=sdk%3Aflutter\"]",
+        "content": "Flutter",
+        "href": "/packages?q=sdk%3Aflutter"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-header.-is-loose div.detail-container div.detail-header-outer-block div.detail-header-content-block div.detail-tags-and-like:nth-of-type(2) div.detail-tags div.-pub-tag-badge:nth-of-type(2) a.tag-badge-sub[href=\"/packages?q=platform%3Aandroid\"]",
+        "content": "Android",
+        "href": "/packages?q=platform%3Aandroid"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-header.-is-loose div.detail-container div.detail-header-outer-block div.detail-header-content-block div.detail-tags-and-like:nth-of-type(2) div.detail-tags div.-pub-tag-badge:nth-of-type(2) a.tag-badge-sub:nth-of-type(2)[href=\"/packages?q=platform%3Aios\"]",
+        "content": "iOS",
+        "href": "/packages?q=platform%3Aios"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-header.-is-loose div.detail-container div.detail-header-outer-block div.detail-header-content-block div.detail-tags-and-like:nth-of-type(2) div.detail-tags div.-pub-tag-badge:nth-of-type(2) a.tag-badge-sub:nth-of-type(3)[href=\"/packages?q=platform%3Alinux\"]",
+        "content": "Linux",
+        "href": "/packages?q=platform%3Alinux"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-header.-is-loose div.detail-container div.detail-header-outer-block div.detail-header-content-block div.detail-tags-and-like:nth-of-type(2) div.detail-tags div.-pub-tag-badge:nth-of-type(2) a.tag-badge-sub:nth-of-type(4)[href=\"/packages?q=platform%3Amacos\"]",
+        "content": "macOS",
+        "href": "/packages?q=platform%3Amacos"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-header.-is-loose div.detail-container div.detail-header-outer-block div.detail-header-content-block div.detail-tags-and-like:nth-of-type(2) div.detail-tags div.-pub-tag-badge:nth-of-type(2) a.tag-badge-sub:nth-of-type(5)[href=\"/packages?q=platform%3Aweb\"]",
+        "content": "web",
+        "href": "/packages?q=platform%3Aweb"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-header.-is-loose div.detail-container div.detail-header-outer-block div.detail-header-content-block div.detail-tags-and-like:nth-of-type(2) div.detail-tags div.-pub-tag-badge:nth-of-type(2) a.tag-badge-sub:nth-of-type(6)[href=\"/packages?q=platform%3Awindows\"]",
+        "content": "Windows",
+        "href": "/packages?q=platform%3Awindows"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-tabs-wide-header div.detail-container ul.detail-tabs-header li.detail-tab.tab-link.detail-tab-changelog-title:nth-of-type(2) a[href=\"/packages/emoji_picker_flutter/changelog\"]",
+        "content": "Changelog",
+        "href": "/packages/emoji_picker_flutter/changelog"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-tabs-wide-header div.detail-container ul.detail-tabs-header li.detail-tab.tab-link.detail-tab-example-title:nth-of-type(3) a[href=\"/packages/emoji_picker_flutter/example\"]",
+        "content": "Example",
+        "href": "/packages/emoji_picker_flutter/example"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-tabs-wide-header div.detail-container ul.detail-tabs-header li.detail-tab.tab-link.detail-tab-installing-title:nth-of-type(4) a[href=\"/packages/emoji_picker_flutter/install\"]",
+        "content": "Installing",
+        "href": "/packages/emoji_picker_flutter/install"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-tabs-wide-header div.detail-container ul.detail-tabs-header li.detail-tab.tab-link.detail-tab-versions-title:nth-of-type(5) a[href=\"/packages/emoji_picker_flutter/versions\"]",
+        "content": "Versions",
+        "href": "/packages/emoji_picker_flutter/versions"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-tabs-wide-header div.detail-container ul.detail-tabs-header li.detail-tab.tab-link.detail-tab-analysis-title:nth-of-type(6) a[href=\"/packages/emoji_picker_flutter/score\"]",
+        "content": "Scores",
+        "href": "/packages/emoji_picker_flutter/score"
+      },
+      {
+        "selector": "h1#emoji_picker_flutter a.hash-link[href=\"#emoji_picker_flutter\"]",
+        "content": "#",
+        "href": "#emoji_picker_flutter"
+      },
+      {
+        "selector": "h2#key-features a.hash-link[href=\"#key-features\"]",
+        "content": "#",
+        "href": "#key-features"
+      },
+      {
+        "selector": "h2#getting-started a.hash-link[href=\"#getting-started\"]",
+        "content": "#",
+        "href": "#getting-started"
+      },
+      {
+        "selector": "h2#examples a.hash-link[href=\"#examples\"]",
+        "content": "#",
+        "href": "#examples"
+      },
+      {
+        "selector": "h2#config a.hash-link[href=\"#config\"]",
+        "content": "#",
+        "href": "#config"
+      },
+      {
+        "selector": "h2#emoji-view-config a.hash-link[href=\"#emoji-view-config\"]",
+        "content": "#",
+        "href": "#emoji-view-config"
+      },
+      {
+        "selector": "h2#skintone-config a.hash-link[href=\"#skintone-config\"]",
+        "content": "#",
+        "href": "#skintone-config"
+      },
+      {
+        "selector": "h2#category-view-config a.hash-link[href=\"#category-view-config\"]",
+        "content": "#",
+        "href": "#category-view-config"
+      },
+      {
+        "selector": "h2#bottom-action-bar-config a.hash-link[href=\"#bottom-action-bar-config\"]",
+        "content": "#",
+        "href": "#bottom-action-bar-config"
+      },
+      {
+        "selector": "h2#search-view-config a.hash-link[href=\"#search-view-config\"]",
+        "content": "#",
+        "href": "#search-view-config"
+      },
+      {
+        "selector": "h2#backspace-button a.hash-link[href=\"#backspace-button\"]",
+        "content": "#",
+        "href": "#backspace-button"
+      },
+      {
+        "selector": "h2#custom-view a.hash-link[href=\"#custom-view\"]",
+        "content": "#",
+        "href": "#custom-view"
+      },
+      {
+        "selector": "h2#localization a.hash-link[href=\"#localization\"]",
+        "content": "#",
+        "href": "#localization"
+      },
+      {
+        "selector": "h2#extended-usage-with-emojipickerutils a.hash-link[href=\"#extended-usage-with-emojipickerutils\"]",
+        "content": "#",
+        "href": "#extended-usage-with-emojipickerutils"
+      },
+      {
+        "selector": "h2#feel-free-to-contribute-to-this-package- a.hash-link[href=\"#feel-free-to-contribute-to-this-package-\"]",
+        "content": "#",
+        "href": "#feel-free-to-contribute-to-this-package-"
+      },
+      {
+        "selector": "h2#if-you-need-any-features a.hash-link[href=\"#if-you-need-any-features\"]",
+        "content": "#",
+        "href": "#if-you-need-any-features"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box a.packages-scores[href=\"/packages/emoji_picker_flutter/score\"]",
+        "content": "588likes160points77kdownloads",
+        "href": "/packages/emoji_picker_flutter/score"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box p a[href=\"/publishers/fintasys.com\"]",
+        "content": "fintasys.com",
+        "href": "/publishers/fintasys.com"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box p:nth-of-type(4) a.link[href=\"/documentation/emoji_picker_flutter/latest/\"]",
+        "content": "API reference",
+        "href": "/documentation/emoji_picker_flutter/latest/"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box p:nth-of-type(5) a[href=\"/packages/emoji_picker_flutter/license\"]",
+        "content": "license",
+        "href": "/packages/emoji_picker_flutter/license"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box p:nth-of-type(6) a:nth-of-type(3)[href=\"/packages/plugin_platform_interface\"]",
+        "content": "plugin_platform_interface",
+        "href": "/packages/plugin_platform_interface"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box p:nth-of-type(6) a:nth-of-type(4)[href=\"/packages/shared_preferences\"]",
+        "content": "shared_preferences",
+        "href": "/packages/shared_preferences"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box p:nth-of-type(6) a:nth-of-type(5)[href=\"/packages/universal_io\"]",
+        "content": "universal_io",
+        "href": "/packages/universal_io"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box p:nth-of-type(6) a:nth-of-type(6)[href=\"/packages/web\"]",
+        "content": "web",
+        "href": "/packages/web"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box p:nth-of-type(7) a[href=\"/packages?q=dependency%3Aemoji_picker_flutter\"]",
+        "content": "Packages that depend on emoji_picker_flutter",
+        "href": "/packages?q=dependency%3Aemoji_picker_flutter"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box a.packages-scores[href=\"/packages/emoji_picker_flutter/score\"]",
+        "content": "588likes160points77kdownloads",
+        "href": "/packages/emoji_picker_flutter/score"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box p a[href=\"/publishers/fintasys.com\"]",
+        "content": "fintasys.com",
+        "href": "/publishers/fintasys.com"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box p:nth-of-type(4) a.link[href=\"/documentation/emoji_picker_flutter/latest/\"]",
+        "content": "API reference",
+        "href": "/documentation/emoji_picker_flutter/latest/"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box p:nth-of-type(5) a[href=\"/packages/emoji_picker_flutter/license\"]",
+        "content": "license",
+        "href": "/packages/emoji_picker_flutter/license"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box p:nth-of-type(6) a:nth-of-type(3)[href=\"/packages/plugin_platform_interface\"]",
+        "content": "plugin_platform_interface",
+        "href": "/packages/plugin_platform_interface"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box p:nth-of-type(6) a:nth-of-type(4)[href=\"/packages/shared_preferences\"]",
+        "content": "shared_preferences",
+        "href": "/packages/shared_preferences"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box p:nth-of-type(6) a:nth-of-type(5)[href=\"/packages/universal_io\"]",
+        "content": "universal_io",
+        "href": "/packages/universal_io"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box p:nth-of-type(6) a:nth-of-type(6)[href=\"/packages/web\"]",
+        "content": "web",
+        "href": "/packages/web"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box p:nth-of-type(7) a[href=\"/packages?q=dependency%3Aemoji_picker_flutter\"]",
+        "content": "Packages that depend on emoji_picker_flutter",
+        "href": "/packages?q=dependency%3Aemoji_picker_flutter"
+      },
+      {
+        "selector": "html body.light-theme footer.site-footer a.link.sep:nth-of-type(3)[href=\"/policy\"]",
+        "content": "Policy",
+        "href": "/policy"
+      },
+      {
+        "selector": "html body.light-theme footer.site-footer a.link.sep:nth-of-type(6)[href=\"/security\"]",
+        "content": "Security",
+        "href": "/security"
+      },
+      {
+        "selector": "html body.light-theme footer.site-footer a.link.sep:nth-of-type(8)[href=\"/help\"]",
+        "content": "Help",
+        "href": "/help"
+      },
+      {
+        "selector": "html body.light-theme footer.site-footer a.link.icon.sep:nth-of-type(9)[href=\"/feed.atom\"]",
+        "content": "",
+        "href": "/feed.atom"
+      }
+    ],
+    "external_links": [
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container.hoverable:nth-of-type(2) div.nav-hover-popup div.nav-table-columns div.nav-table-column:nth-of-type(2) a.nav-link[href=\"https://flutter.dev/using-packages/\"]",
+        "content": "Using packages",
+        "href": "https://flutter.dev/using-packages/"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container.hoverable:nth-of-type(2) div.nav-hover-popup div.nav-table-columns div.nav-table-column:nth-of-type(2) a.nav-link:nth-of-type(2)[href=\"https://flutter.dev/developing-packages/\"]",
+        "content": "Developing packages and plugins",
+        "href": "https://flutter.dev/developing-packages/"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container.hoverable:nth-of-type(2) div.nav-hover-popup div.nav-table-columns div.nav-table-column:nth-of-type(2) a.nav-link:nth-of-type(3)[href=\"https://dart.dev/tools/pub/publishing\"]",
+        "content": "Publishing a package",
+        "href": "https://dart.dev/tools/pub/publishing"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container.hoverable:nth-of-type(2) div.nav-hover-popup div.nav-table-columns div.nav-table-column:nth-of-type(3) a.nav-link[href=\"https://dart.dev/guides/packages\"]",
+        "content": "Using packages",
+        "href": "https://dart.dev/guides/packages"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container.hoverable:nth-of-type(2) div.nav-hover-popup div.nav-table-columns div.nav-table-column:nth-of-type(3) a.nav-link:nth-of-type(2)[href=\"https://dart.dev/tools/pub/publishing\"]",
+        "content": "Publishing a package",
+        "href": "https://dart.dev/tools/pub/publishing"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container-mobile.foldable:nth-of-type(4) div.foldable-content a.nav-link[href=\"https://flutter.dev/using-packages/\"]",
+        "content": "Using packages",
+        "href": "https://flutter.dev/using-packages/"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container-mobile.foldable:nth-of-type(4) div.foldable-content a.nav-link:nth-of-type(2)[href=\"https://flutter.dev/developing-packages/\"]",
+        "content": "Developing packages and plugins",
+        "href": "https://flutter.dev/developing-packages/"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container-mobile.foldable:nth-of-type(4) div.foldable-content a.nav-link:nth-of-type(3)[href=\"https://dart.dev/tools/pub/publishing\"]",
+        "content": "Publishing a package",
+        "href": "https://dart.dev/tools/pub/publishing"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container-mobile.foldable:nth-of-type(5) div.foldable-content a.nav-link[href=\"https://dart.dev/guides/packages\"]",
+        "content": "Using packages",
+        "href": "https://dart.dev/guides/packages"
+      },
+      {
+        "selector": "html body.light-theme div.site-header nav.site-header-nav.scroll-container div.nav-container.nav-help-container-mobile.foldable:nth-of-type(5) div.foldable-content a.nav-link:nth-of-type(2)[href=\"https://dart.dev/tools/pub/publishing\"]",
+        "content": "Publishing a package",
+        "href": "https://dart.dev/tools/pub/publishing"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p a[href=\"https://github.com/fintasys\"]",
+        "content": "",
+        "href": "https://github.com/fintasys"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p a:nth-of-type(2)[href=\"https://github.com/fintasys/emoji_picker_flutter/actions\"]",
+        "content": "",
+        "href": "https://github.com/fintasys/emoji_picker_flutter/actions"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p a:nth-of-type(3)[href=\"https://github.com/fintasys/emoji_picker_flutter\"]",
+        "content": "",
+        "href": "https://github.com/fintasys/emoji_picker_flutter"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p a:nth-of-type(4)[href=\"https://opensource.org/licenses/BSD-2-Clause\"]",
+        "content": "",
+        "href": "https://opensource.org/licenses/BSD-2-Clause"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p:nth-of-type(3) a[href=\"https://www.buymeacoffee.com/fintasys\"]",
+        "content": "",
+        "href": "https://www.buymeacoffee.com/fintasys"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p:nth-of-type(4) a[href=\"https://github.com/Fintasys/emoji_picker_flutter/tree/master/example/lib\"]",
+        "content": "here",
+        "href": "https://github.com/Fintasys/emoji_picker_flutter/tree/master/example/lib"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body ol li:nth-of-type(2) p a[href=\"https://github.com/Fintasys/emoji_picker_flutter/issues/205\"]",
+        "content": "issue 205",
+        "href": "https://github.com/Fintasys/emoji_picker_flutter/issues/205"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) div.detail-tabs div.detail-container.detail-body-main:nth-of-type(2) div.detail-tabs-content section.tab-content.detail-tab-readme-content.-active.markdown-body p:nth-of-type(17) a[href=\"https://github.com/Fintasys/emoji_picker_flutter/blob/master/example/lib/main_key.dart\"]",
+        "content": "here",
+        "href": "https://github.com/Fintasys/emoji_picker_flutter/blob/master/example/lib/main_key.dart"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box p:nth-of-type(3) a.link[href=\"https://github.com/Fintasys/emoji_picker_flutter\"]",
+        "content": "Repository (GitHub)",
+        "href": "https://github.com/Fintasys/emoji_picker_flutter"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box p:nth-of-type(3) a.link:nth-of-type(2)[href=\"https://github.com/Fintasys/emoji_picker_flutter/issues\"]",
+        "content": "View/report issues",
+        "href": "https://github.com/Fintasys/emoji_picker_flutter/issues"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box p:nth-of-type(6) a[href=\"https://api.flutter.dev/\"]",
+        "content": "flutter",
+        "href": "https://api.flutter.dev/"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-wrapper.-active.-has-info-box div.detail-body:nth-of-type(3) aside.detail-info-box p:nth-of-type(6) a:nth-of-type(2)[href=\"https://api.flutter.dev/flutter/flutter_web_plugins/flutter_web_plugins-library.html\"]",
+        "content": "flutter_web_plugins",
+        "href": "https://api.flutter.dev/flutter/flutter_web_plugins/flutter_web_plugins-library.html"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box p:nth-of-type(3) a.link[href=\"https://github.com/Fintasys/emoji_picker_flutter\"]",
+        "content": "Repository (GitHub)",
+        "href": "https://github.com/Fintasys/emoji_picker_flutter"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box p:nth-of-type(3) a.link:nth-of-type(2)[href=\"https://github.com/Fintasys/emoji_picker_flutter/issues\"]",
+        "content": "View/report issues",
+        "href": "https://github.com/Fintasys/emoji_picker_flutter/issues"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box p:nth-of-type(6) a[href=\"https://api.flutter.dev/\"]",
+        "content": "flutter",
+        "href": "https://api.flutter.dev/"
+      },
+      {
+        "selector": "html body.light-theme main.container div.detail-metadata:nth-of-type(2) div.detail-info-box p:nth-of-type(6) a:nth-of-type(2)[href=\"https://api.flutter.dev/flutter/flutter_web_plugins/flutter_web_plugins-library.html\"]",
+        "content": "flutter_web_plugins",
+        "href": "https://api.flutter.dev/flutter/flutter_web_plugins/flutter_web_plugins-library.html"
+      },
+      {
+        "selector": "html body.light-theme footer.site-footer a.link[href=\"https://dart.dev/\"]",
+        "content": "Dart language",
+        "href": "https://dart.dev/"
+      },
+      {
+        "selector": "html body.light-theme footer.site-footer a.link.sep:nth-of-type(2)[href=\"/report?subject=package%3Aemoji_picker_flutter&url=https%3A%2F%2Fpub.dev%2Fpackages%2Femoji_picker_flutter\"]",
+        "content": "Report package",
+        "href": "/report?subject=package%3Aemoji_picker_flutter&url=https%3A%2F%2Fpub.dev%2Fpackages%2Femoji_picker_flutter"
+      },
+      {
+        "selector": "html body.light-theme footer.site-footer a.link.sep:nth-of-type(4)[href=\"https://www.google.com/intl/en/policies/terms/\"]",
+        "content": "Terms",
+        "href": "https://www.google.com/intl/en/policies/terms/"
+      },
+      {
+        "selector": "html body.light-theme footer.site-footer a.link.sep:nth-of-type(5)[href=\"https://developers.google.com/terms/\"]",
+        "content": "API Terms",
+        "href": "https://developers.google.com/terms/"
+      },
+      {
+        "selector": "html body.light-theme footer.site-footer a.link.sep:nth-of-type(7)[href=\"https://www.google.com/intl/en/policies/privacy/\"]",
+        "content": "Privacy",
+        "href": "https://www.google.com/intl/en/policies/privacy/"
+      },
+      {
+        "selector": "html body.light-theme footer.site-footer a.link.icon.github_issue:nth-of-type(10)[href=\"https://github.com/dart-lang/pub-dev/issues/new\"]",
+        "content": "",
+        "href": "https://github.com/dart-lang/pub-dev/issues/new"
+      }
+    ]
+  },
+  "message": "html parsing completed successfully"
+}
+
