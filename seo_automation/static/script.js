@@ -163,12 +163,12 @@ const SeoAutomationScript = {
         element,
         old_data,
         new_data,
-        true,
         ignoreCase,
         alreadyReplaced,
         true,
         attributeToUpdate,
         replaceInnerHTML,
+        selector
       );
       if (new_selector) {
         this.moveElement(element, new_selector);
@@ -334,13 +334,23 @@ const SeoAutomationScript = {
     node,
     keyword,
     newText,
-    isAsian,
     ignoreCase,
     alreadyReplaced,
     forceSet,
     attributeToUpdate,
     replaceInnerHTML,
+    selectorOfElement
   ) {
+
+
+    if (selectorOfElement && forceSet && !attributeToUpdate && newText) {
+      var element = document.querySelector(selectorOfElement);
+      if (element) {
+        element.textContent = newText;
+        return;
+      }
+    }
+    
     var walker;
     if (!attributeToUpdate || attributeToUpdate === "TEXT") {
       walker = document.createTreeWalker(node, NodeFilter.SHOW_TEXT, {
@@ -404,16 +414,9 @@ const SeoAutomationScript = {
         "\\$&",
       );
 
-      regex = isAsian
-        ? new RegExp(
+      regex = new RegExp(
           `(?<=[\\p{IsHan}\\p{IsBopo}\\p{IsHira}\\p{IsKatakana}]?)${escapedPlainTextPhrase}[\\.{!\\?}(|\\]\\\\]?(?![a-zA-Z])(?=[\\)\\/]?)`,
           ignoreCase ? "i" : "",
-        )
-        : new RegExp(
-          `(?<=^|\\s|[([{<"'В«вЂ№вЂћ"'|/]|\\-|:|'|'|')` +
-          `${escapedPlainTextPhrase}` +
-          `(?=$|\\s|[)\\]}>"'В»вЂє"'|/]|\\-|[.,:;!?]|'|'|')`,
-          ignoreCase ? "gi" : "g",
         );
     }
 

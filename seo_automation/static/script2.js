@@ -136,7 +136,11 @@ const SeoAutomationScript = {
         this.showError(e);
       }
     };
-
+    if (!data.map) {
+      window.loadedSeoAutomationScript = false
+      return;
+    }
+    
     data.map((i) => {
       processSuggestion(i);
     });
@@ -263,7 +267,15 @@ const SeoAutomationScript = {
   createMetaTag(selector, data, attributesToSet) {
     const normalizedSelector = selector.trim().replace(/,\s*$/, '').replace(/\s+/g, ' ');
 
-    const parts = normalizedSelector.split('>').map(part => part.trim());
+    const parts = normalizedSelector.split('>').map(part => {
+      // Разбиваем каждую часть по пробелу и фильтруем пустые элементы
+      return part.trim().split(/\s+/).filter(Boolean);
+    }).flat();
+
+    if (parts.indexOf('head') === -1) {
+      console.log(`Селектор ${selector} не содержит "head" элемента`);
+      return null;
+    }
 
     if (parts.length < 1) {
       console.error(`Некорректный селектор: "${selector}"`);
@@ -272,7 +284,7 @@ const SeoAutomationScript = {
 
     const lastPart = parts[parts.length - 1];
 
-    const tagMatch = lastPart.match(/^([a-zA-Z0-9-]+)(\[.*\])?$/);
+    const tagMatch = lastPart.match(/^([a-zA-Z0-9-]+)(?:\[([^\]]+)\])?$/);
     if (!tagMatch) {
       console.error(`Некорректный формат элемента в селекторе: "${lastPart}"`);
       return null;
@@ -280,7 +292,7 @@ const SeoAutomationScript = {
 
     const elementToCreate = tagMatch[1];
 
-    const parentSelector = parts.slice(0, -1).join('>').trim() || 'html > head';
+    const parentSelector = parts.slice(0, -1).join(' > ').trim() || 'html > head';
 
     const parentElement = document.querySelector(parentSelector);
 
@@ -300,15 +312,17 @@ const SeoAutomationScript = {
     }
 
     if (tagMatch[2]) {
-      const attrMatch = tagMatch[2].match(/\[([^=]+)="([^"]+)"\]/);
-      if (attrMatch) {
-        const attrName = attrMatch[1];
-        const attrValue = attrMatch[2];
-        if (!attributesToSet.has(attrName)) {
-          newElement.setAttribute(attrName, attrValue);
-          newElement.setAttribute("content", data);
+      const attrPairs = tagMatch[2].split('][').map(attr => attr.replace(/[\[\]]/g, ''));
+      for (const pair of attrPairs) {
+        const [name, value] = pair.split('=').map(s => s.replace(/"/g, ''));
+        if (name && value) {
+          newElement.setAttribute(name, value);
         }
       }
+    }
+
+    if (!newElement.hasAttribute('content')) {
+      newElement.setAttribute('content', data);
     }
 
     parentElement.appendChild(newElement);
