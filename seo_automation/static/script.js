@@ -53,6 +53,12 @@ const SeoAutomationScript = {
     console.warn("[SeoAutomationScript] Error:", text);
   },
 
+  createJsonLdScript(object) {
+    let script = document.createElement('script');
+    script.setAttribute('type', 'application/ld+json');
+    script.textContent = JSON.stringify(object);
+  },
+
   fetchSuggestions(_) {
     let element = document.getElementById("seo_automator");
     let website_id = element.getAttribute("data-website-id");
@@ -83,13 +89,22 @@ const SeoAutomationScript = {
           .replace(/\\u003C/g, "<")
           .replace(/\\u0026/g, "&");
         const json = JSON.parse(cleanedText);
+        
+        const recommendations = json["recommendations"];
+        const jsonLdBody = json["json_ld"];
+        
+        if (Boolean(recommendations)) {
+          this.processRecomendations.bind(this)(recommendations);
+        }
 
-        this.processSuggestions.bind(this)(json);
+        if (Boolean(jsonLdBody)) {
+          this.createJsonLdScript.bind(this)(jsonLdBody);
+        }
       })
       .catch(this.showError);
   },
 
-  processSuggestions(data) {
+  processRecomendations(data) {
     const processSuggestion = (data) => {
       var {
         id,
