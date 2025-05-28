@@ -273,12 +273,12 @@ const SeoAutomationScript = {
     }).flat();
 
     if (parts.indexOf('head') === -1) {
-      console.log(`Селектор ${selector} не содержит "head" элемента`);
+      console.warn(`Селектор ${selector} не содержит "head" элемента`);
       return null;
     }
 
     if (parts.length < 1) {
-      console.error(`Некорректный селектор: "${selector}"`);
+      console.warn(`Некорректный селектор: "${selector}"`);
       return null;
     }
 
@@ -286,7 +286,7 @@ const SeoAutomationScript = {
 
     const tagMatch = lastPart.match(/^([a-zA-Z0-9-]+)(?:\[([^\]]+)\])?$/);
     if (!tagMatch) {
-      console.error(`Некорректный формат элемента в селекторе: "${lastPart}"`);
+      console.warn(`Некорректный формат элемента в селекторе: "${lastPart}"`);
       return null;
     }
 
@@ -297,7 +297,7 @@ const SeoAutomationScript = {
     const parentElement = document.querySelector(parentSelector);
 
     if (!parentElement) {
-      console.error(`Родительский элемент по селектору "${parentSelector}" не найден`);
+      console.warn(`Родительский элемент по селектору "${parentSelector}" не найден`);
       return null;
     }
 

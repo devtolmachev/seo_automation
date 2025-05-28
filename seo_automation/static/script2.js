@@ -163,12 +163,12 @@ const SeoAutomationScript = {
         element,
         old_data,
         new_data,
-        true,
         ignoreCase,
         alreadyReplaced,
         true,
         attributeToUpdate,
         replaceInnerHTML,
+        selector
       );
       if (new_selector) {
         this.moveElement(element, new_selector);
@@ -273,12 +273,12 @@ const SeoAutomationScript = {
     }).flat();
 
     if (parts.indexOf('head') === -1) {
-      console.log(`Селектор ${selector} не содержит "head" элемента`);
+      console.warn(`Селектор ${selector} не содержит "head" элемента`);
       return null;
     }
 
     if (parts.length < 1) {
-      console.error(`Некорректный селектор: "${selector}"`);
+      console.warn(`Некорректный селектор: "${selector}"`);
       return null;
     }
 
@@ -286,7 +286,7 @@ const SeoAutomationScript = {
 
     const tagMatch = lastPart.match(/^([a-zA-Z0-9-]+)(?:\[([^\]]+)\])?$/);
     if (!tagMatch) {
-      console.error(`Некорректный формат элемента в селекторе: "${lastPart}"`);
+      console.warn(`Некорректный формат элемента в селекторе: "${lastPart}"`);
       return null;
     }
 
@@ -297,7 +297,7 @@ const SeoAutomationScript = {
     const parentElement = document.querySelector(parentSelector);
 
     if (!parentElement) {
-      console.error(`Родительский элемент по селектору "${parentSelector}" не найден`);
+      console.warn(`Родительский элемент по селектору "${parentSelector}" не найден`);
       return null;
     }
 
@@ -334,13 +334,23 @@ const SeoAutomationScript = {
     node,
     keyword,
     newText,
-    isAsian,
     ignoreCase,
     alreadyReplaced,
     forceSet,
     attributeToUpdate,
     replaceInnerHTML,
+    selectorOfElement
   ) {
+
+
+    if (selectorOfElement && forceSet && !attributeToUpdate && newText) {
+      var element = document.querySelector(selectorOfElement);
+      if (element) {
+        element.textContent = newText;
+        return;
+      }
+    }
+    
     var walker;
     if (!attributeToUpdate || attributeToUpdate === "TEXT") {
       walker = document.createTreeWalker(node, NodeFilter.SHOW_TEXT, {
@@ -404,16 +414,9 @@ const SeoAutomationScript = {
         "\\$&",
       );
 
-      regex = isAsian
-        ? new RegExp(
+      regex = new RegExp(
           `(?<=[\\p{IsHan}\\p{IsBopo}\\p{IsHira}\\p{IsKatakana}]?)${escapedPlainTextPhrase}[\\.{!\\?}(|\\]\\\\]?(?![a-zA-Z])(?=[\\)\\/]?)`,
           ignoreCase ? "i" : "",
-        )
-        : new RegExp(
-          `(?<=^|\\s|[([{<"'В«вЂ№вЂћ"'|/]|\\-|:|'|'|')` +
-          `${escapedPlainTextPhrase}` +
-          `(?=$|\\s|[)\\]}>"'В»вЂє"'|/]|\\-|[.,:;!?]|'|'|')`,
-          ignoreCase ? "gi" : "g",
         );
     }
 
