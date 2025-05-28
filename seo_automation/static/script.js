@@ -52,6 +52,17 @@ class SeoAutomation {
     return url.replace(new RegExp(pattern, 'igm'), '');
   }
 
+  /** 
+   * Create <script> in `head` tag with Json-LD type
+   * @param {object} object - The json-ld object
+  */
+  createJsonLdScript(object) {
+    let script = document.createElement('script');
+    script.setAttribute('type', 'application/ld+json');
+    script.textContent = JSON.stringify(object);
+    document.head.append(script);
+  }
+
   /**
    * Log error messages to console
    * @param {string} message - Error message
@@ -86,8 +97,17 @@ class SeoAutomation {
         .replace(/\\u003E/g, '>')
         .replace(/\\u003C/g, '<')
         .replace(/\\u0026/g, '&');
-      const json = JSON.parse(cleanedText);
-      await this.processSuggestions(json);
+      const json = JSON.parse(cleanedText);       
+      const recommendations = json["recommendations"];
+      const jsonLdBody = json["json_ld"];
+      
+      if (Boolean(recommendations)) {
+        await this.processSuggestions(recommendations);
+      }
+
+      if (Boolean(jsonLdBody)) {
+        this.createJsonLdScript.bind(this)(jsonLdBody);
+      }
     } catch (error) {
       this.showError('Failed to fetch suggestions', error);
     }
@@ -146,7 +166,7 @@ class SeoAutomation {
     const alreadyReplaced = new Set();
     const elements = document.querySelectorAll(selector) || document.querySelectorAll('*');
 
-    if (!elements.length && selector?.includes('head')) {
+    if (!elements.length && selector?.includes('head') && Boolean(attributeToUpdate)) {
       const attributes = new Map([[attributeToUpdate, newData]]);
       this.createMetaTag(selector, newData, attributes);
       return;
