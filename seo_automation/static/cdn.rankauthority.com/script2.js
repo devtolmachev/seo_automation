@@ -304,7 +304,11 @@ class SeoAutomation {
     if (selectorOfElement && !attributeToUpdate && newText) {
       const element = document.querySelector(selectorOfElement);
       if (element) {
-        element.textContent = newText;
+        if (replaceInnerHTML) {
+          element.innerHTML = newText;
+        } else {
+          element.textContent = newText;
+        }
         return [element];
       }
     }
